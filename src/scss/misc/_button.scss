@@ -1,0 +1,35 @@
+.btn_red_full { 
+    width: fit-content;
+    font-family: $body-font;
+    font-weight: 700;
+    font-size: 2.8rem;
+    border-radius: 12px;
+    border: 3px solid $rouge-tomate;
+    background: $rouge-tomate;
+    color: $creme-chantilly;
+    padding: 7px 45px;
+    align-items: center;
+    cursor: pointer; /* Add a pointer cursor on mouse-over */
+
+    &:hover {
+        border: none;
+    }
+}
+
+.btn_white_full { 
+    width: fit-content;
+    font-family: $body-font;
+    font-weight: 700;
+    font-size: 2.8rem;
+    border-radius: 12px;
+    border: 3px solid $creme-chantilly;
+    background: $creme-chantilly;
+    color: $rouge-tomate;
+    padding: 7px 45px;
+    align-items: center;
+    cursor: pointer; /* Add a pointer cursor on mouse-over */
+
+    &:hover {
+        border: none;
+    }
+}
