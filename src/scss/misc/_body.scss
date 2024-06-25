@@ -15,9 +15,13 @@ a {
 
 h1 {
     font-family: $head-font;
-    font-size: 22.4rem;
+    font-size: 8rem;
     line-height: 0px;
-    color: $rouge-tomate;
+    color: $rouge-tomate; 
+
+    @media screen and (min-width: 900px) {
+        font-size: 22.4rem;
+    }
 }
 
 h2 {

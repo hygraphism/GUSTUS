@@ -7,6 +7,7 @@ $font-family-Quicksand-regular : "Quicksand", sans-serif;
 $font-family-Quicksand-medium : "Quicksand", sans-serif;
 $font-family-Quicksand-semibold : "Quicksand", sans-serif;
 $font-family-Quicksand-bold : "Quicksand", sans-serif;*/
+/*Text*/
 .btn_red_full {
   width: -moz-fit-content;
   width: fit-content;
@@ -111,9 +112,14 @@ a {
 
 h1 {
   font-family: "Pacifico", serif;
-  font-size: 22.4rem;
+  font-size: 8rem;
   line-height: 0px;
   color: #D90718;
+}
+@media screen and (min-width: 900px) {
+  h1 {
+    font-size: 22.4rem;
+  }
 }
 
 h2 {
@@ -165,6 +171,7 @@ header .mainMenu.isVisible {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    margin-bottom: 28px;
   }
   header .mainMenu img {
     display: inline;
@@ -179,4 +186,76 @@ header .mainMenu.isVisible {
 }
 
 /* landing page */
+.hero {
+  display: flex;
+  width: 100%;
+  gap: 1%;
+}
+.hero_half {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 2%;
+  text-align: center;
+}
+.hero_half_h1_container {
+  width: 100%;
+  text-align: center;
+}
+.hero_half_cta {
+  color: #FFFCED;
+  border-radius: 12px;
+  border: 3px solid #57751F;
+  background-color: #57751F;
+  text-align: start;
+  padding: 45px 36px;
+}
+.hero_half_cta_title_text {
+  margin-bottom: 80px;
+}
+.hero_half_cta_title_text h2 {
+  width: 66%;
+  margin-bottom: 67px;
+}
+.hero_half_cta_title_text p {
+  font-family: "Quicksand", sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 3.8rem;
+}
+.hero_half_hello {
+  display: flex;
+  gap: 1%;
+  padding: 20px 64px;
+  border-radius: 12px;
+  border: 3px solid #F29F05;
+  background-color: #F29F05;
+}
+.hero_half_images_container {
+  display: flex;
+  width: 100%;
+  height: 99%;
+  gap: 2%;
+}
+.hero_spoon_artifice_container {
+  border-radius: 12px;
+  border: 3px solid #24376E;
+  background-color: #24376E;
+  width: 100%;
+  height: 99%;
+}
+.hero_spoon_artifice_content {
+  align-self: center;
+}
+.hero_tupp_container {
+  border-radius: 12px;
+  border: 3px solid #9EA5D3;
+  background-color: #9EA5D3;
+  width: 100%;
+  height: 99%;
+}
+.hero_tupp_content {
+  align-self: center;
+}
+
 /* gustus *//*# sourceMappingURL=app.css.map */
