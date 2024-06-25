@@ -7,16 +7,12 @@ $font-family-Quicksand-regular : "Quicksand", sans-serif;
 $font-family-Quicksand-medium : "Quicksand", sans-serif;
 $font-family-Quicksand-semibold : "Quicksand", sans-serif;
 $font-family-Quicksand-bold : "Quicksand", sans-serif;*/
-@font-face {
-  font-family: Pacifico;
-  src: url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
-}
 .btn_red_full {
   width: -moz-fit-content;
   width: fit-content;
   font-family: "Quicksand", sans-serif;
   font-weight: 700;
-  font-size: 2.8rem;
+  font-size: 2rem;
   border-radius: 12px;
   border: 3px solid #D90718;
   background: #D90718;
@@ -28,13 +24,21 @@ $font-family-Quicksand-bold : "Quicksand", sans-serif;*/
 .btn_red_full:hover {
   border: none;
 }
+@media screen and (min-width: 900px) {
+  .btn_red_full {
+    font-size: 2.8rem;
+  }
+  .btn_red_full:hover {
+    border: none;
+  }
+}
 
 .btn_white_full {
   width: -moz-fit-content;
   width: fit-content;
   font-family: "Quicksand", sans-serif;
   font-weight: 700;
-  font-size: 2.8rem;
+  font-size: 2rem;
   border-radius: 12px;
   border: 3px solid #FFFCED;
   background: #FFFCED;
@@ -44,13 +48,60 @@ $font-family-Quicksand-bold : "Quicksand", sans-serif;*/
   cursor: pointer; /* Add a pointer cursor on mouse-over */
 }
 .btn_white_full:hover {
-  border: none;
+  border: 3px solid #FFFCED;
+  background: #D90718;
+  color: #FFFCED;
+}
+@media screen and (min-width: 900px) {
+  .btn_white_full {
+    font-size: 2.8rem;
+  }
+  .btn_white_full:hover {
+    border: 3px solid #FFFCED;
+    background: #D90718;
+    color: #FFFCED;
+  }
+}
+
+.btn_cta {
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  font-size: 5.2rem;
+  border-radius: 12px;
+  border: 3px solid #D90718;
+  background: #FFFCED;
+  color: #D90718;
+  padding: 14px 112px;
+  align-items: center;
+  cursor: pointer; /* Add a pointer cursor on mouse-over */
+}
+.btn_cta:hover {
+  border: 3px solid #FFFCED;
+  background: #D90718;
+  color: #FFFCED;
+}
+@media screen and (min-width: 900px) {
+  .btn_cta {
+    font-size: 2.8rem;
+  }
+  .btn_cta:hover {
+    border: 3px solid #FFFCED;
+    background: #D90718;
+    color: #FFFCED;
+  }
 }
 
 html {
   font-size: 62.5%;
-  margin: 0;
+  margin: 20px 48px;
   background-color: #FFFCED;
+}
+@media screen and (max-width: 960px) {
+  html {
+    margin: 20px 28px;
+  }
 }
 
 a {
@@ -62,25 +113,69 @@ h1 {
   font-family: "Pacifico", serif;
   font-size: 22.4rem;
   line-height: 0px;
+  color: #D90718;
 }
 
 h2 {
   font-family: "Quicksand", sans-serif;
   font-size: 6.8rem;
   font-weight: 700;
+  line-height: 80px;
 }
 
-header nav {
-  display: flex;
-  justify-content: space-between;
+header {
+  gap: 10px;
 }
-header nav img {
-  width: 68px;
+header .mainMenu {
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 68px 16px 16px 16px;
+  background-color: #FFFCED;
+  border-radius: 24px;
+  border: 3px solid #D90718;
+  transition: all ease-in-out 0.25s;
+  text-align: center;
 }
-header nav span {
-  width: 463px;
+header .mainMenu div {
+  gap: 10px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+}
+header .mainMenu img {
+  display: none;
+}
+header .mainMenu.isVisible {
+  left: 20px;
+}
+@media screen and (min-width: 900px) {
+  header .hamburger {
+    display: none;
+  }
+  header .mainMenu {
+    position: static;
+    border: none;
+    gap: 0px;
+    padding: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  header .mainMenu img {
+    display: inline;
+    width: 68px;
+  }
+  header .mainMenu div {
+    width: -moz-fit-content;
+    width: fit-content;
+    gap: 63px;
+    flex-direction: row;
+  }
 }
 
 /* landing page */

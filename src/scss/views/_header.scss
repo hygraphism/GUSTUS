@@ -1,17 +1,61 @@
 header {
+    gap: 10px;
 
-    nav {
-        display: flex;
-        justify-content: space-between;
+    .mainMenu {
+        position: fixed;
+        left: 20px;
+        top: 20px;
+        height: fit-content;
+        width: fit-content;
+        padding: 68px 16px 16px 16px;
+        background-color: $creme-chantilly;
+        border-radius: 24px;
+        border: 3px solid $rouge-tomate;
+        transition: all ease-in-out 0.25s;
+        text-align: center;
+
+        div {
+            gap: 10px;
+            display: flex;
+            flex-direction: column;
+        }
 
         img {
-            width: 68px;
-        }
-
-        span {
-           width : 463px;
-           display: flex;
-           justify-content: space-between;
+            display: none;
         }
     }
-  }
+
+    .mainMenu.isVisible {
+        left: 20px;
+    }
+
+    @media screen and (min-width: 900px) {
+        .hamburger {
+            display: none;
+        }
+    
+        .mainMenu {
+            position: static;
+            border: none;
+            gap: 0px;
+            padding: 0px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+
+            img {
+                display: inline;
+                width: 68px;
+            }
+    
+            div {
+                width: fit-content;
+                gap : 63px;
+                flex-direction: row;
+            }
+
+        }   
+
+    }
+}

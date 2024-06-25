@@ -1,7 +1,11 @@
 html {
     font-size: 62.5%;
-    margin : 0;
+    margin: 20px 48px;
     background-color: $creme-chantilly;
+
+    @media screen and (max-width: 960px) {
+        margin: 20px 28px;
+    }
 }
 
 a {
@@ -13,10 +17,12 @@ h1 {
     font-family: $head-font;
     font-size: 22.4rem;
     line-height: 0px;
+    color: $rouge-tomate;
 }
 
 h2 {
     font-family: $body-font;
     font-size: 6.8rem;
     font-weight: 700;
+    line-height: 80px;
 }
