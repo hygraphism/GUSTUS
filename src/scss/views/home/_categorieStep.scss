@@ -1,0 +1,13 @@
+/* step flex */
+.elementVertical {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.elementHorizontal {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+

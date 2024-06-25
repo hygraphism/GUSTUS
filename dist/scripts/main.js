@@ -9,11 +9,11 @@ burgerButton.addEventListener('click', function(){
 
 /* hero animation hover*/
 /////spoon
-let spoon_animation = document.querySelector('.hero_spoon_artifice_content');
+let spoon__animation = document.querySelector('.hero__spoon__artifice__content');
 let blockSpoon = document.getElementById('spoonHero'); 
 
 let spoonPlay = lottie.loadAnimation({
-    container: spoon_animation,
+    container: spoon__animation,
     renderer: 'svg',
     loop: true,
     autoplay: false,
@@ -21,32 +21,44 @@ let spoonPlay = lottie.loadAnimation({
 });
 
 blockSpoon.addEventListener('mouseenter', function() {
-  spoonPlay.play();
+  spoonPlay.playSegments([0,121],true);
 });
 
 blockSpoon.addEventListener('mouseleave', function() {
-  spoonPlay.pause();
+  spoonPlay.playSegments([120,121],true);
 });
 
+/////tupp
+let tupp__animation = document.querySelector('.hero__tupp__content');
+let blockTupp = document.getElementById('tuppHero'); 
+
+let tuppPlay = lottie.loadAnimation({
+    container: tupp__animation,
+    renderer: 'svg',
+    loop: true,
+    autoplay: false,
+    path: "../dist/lotti/tupp.json"
+});
 
 /*
-/////tupp
-let icon_spotify_div = document.querySelector('.icon_spotify_play');
-
-let animationiconplay = lottie.loadAnimation({
-    container: icon_spotify_div,
-    renderer: 'svg',
-    loop: false,
-    autoplay: false,
-    prerender: true,
-    path: "dist/images/button/bouton_musique/musique.json"
+blockTupp.addEventListener('mouseenter', function() {
+  tuppPlay.playSegments([0,74],true);
 });
 
-let clicked3 = false;
-
-icon_spotify_div.addEventListener('mouseenter', function() {
-    let curFrame = animationiconplay.currentFrame;
-    if(clicked3 == false){
-        animationiconplay.playSegments([0,curFrame],true);
-    }
+blockTupp.addEventListener('mouseleave', function(){
+  tuppPlay.playSegments([73,74],true);
 })*/
+
+tuppPlay.addEventListener('DOMLoaded', function() {
+
+  tuppPlay.playSegments([73,74],true);
+
+  blockTupp.addEventListener('mouseenter', function(){
+    tuppPlay.playSegments([0,74],true);
+  })
+
+  blockTupp.addEventListener('mouseleave', function(){
+    tuppPlay.playSegments([73,74],true);
+  })
+
+});

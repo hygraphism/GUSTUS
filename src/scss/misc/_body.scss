@@ -1,3 +1,7 @@
+* {
+    margin : 0;
+}
+
 html {
     font-size: 62.5%;
     margin: 20px 48px;
@@ -6,6 +10,7 @@ html {
     @media screen and (max-width: 960px) {
         margin: 20px 28px;
     }
+
 }
 
 a {
@@ -20,13 +25,180 @@ h1 {
     color: $rouge-tomate; 
 
     @media screen and (min-width: 900px) {
+        font-size: 14.4rem;
+    }
+
+    @media screen and (min-width: 1280px) {
         font-size: 22.4rem;
     }
 }
 
 h2 {
     font-family: $body-font;
-    font-size: 6.8rem;
+    font-size: 3.6rem;
     font-weight: 700;
-    line-height: 80px;
+    line-height: 45px;
+
+    @media screen and (min-width: 900px) {
+        font-size: 6.8rem;
+        line-height: 80px;
+    }
 }
+
+h3 {
+    font-family: $head-font;
+    font-size: 7.2rem;
+    font-weight: 400;
+    line-height: 0px;
+
+    @media screen and (min-width: 900px) {
+        font-size: 14rem;
+    }
+}
+
+h4 {
+    
+}
+
+
+/* Background Color element */
+.elementGreen {
+    background-color: $vert-pois;
+}
+
+.elementGreen-borderColor {
+    border-color: $vert-pois;
+}
+
+.elementYellow {
+    background-color: $jaune-curcuma;
+}
+
+.elementYellow-borderColor {
+    border-color: $jaune-curcuma;
+}
+
+.elementLightblue {
+    background-color: $bleu-passeoire;
+}
+
+.elementLightblue-borderColor {
+    border-color: $bleu-passeoire;
+}
+
+.elementPink {
+    background-color: $rose-bonbon;
+}
+
+.elementPink-borderColor {
+    border-color: $rose-bonbon;
+}
+
+.elementCremeRed {
+    background-color: $creme-chantilly;
+}
+.elementCremeRed-borderColor {
+    border-color: $rouge-tomate;
+}
+
+.elementDarkblue {
+    background-color: $bleu-myrtille;
+}
+
+.elementDarkblue-borderColor {
+    border-color: $bleu-myrtille;
+}
+
+/* Border element */
+.elementBorder {
+    border-width: 3px solid;
+}
+
+.elementBorderRadius-in {
+    border-radius: 12px;
+}
+
+.elementBorderRadius-out {
+    border-radius: 24px;
+}
+
+/* width element */
+
+.element-1-2 {
+    width: 100%;
+
+    @media screen and (min-width: 960px) {
+        width: 50%;
+    }
+}
+
+.element-1-4 {
+    width: 50%;
+
+    @media screen and (min-width: 960px) {
+        width: 25%;
+    }
+}
+
+.element-2-3 {
+    width: 100%;
+
+    @media screen and (min-width: 960px) {
+        width: calc(100% / 3 * 2);
+    }
+}
+
+.element-1-3 {
+    width: 100%;
+
+    @media screen and (min-width: 960px) {
+        width: calc(100% / 3);
+    }
+}
+
+/* height element */
+.element-height-1-3 {
+    height: fit-content;
+
+    @media screen and (min-width: 960px) {
+        height: calc(100% / 3);
+    }
+}
+
+.element-height-2-3 {
+    height: fit-content;
+
+    @media screen and (min-width: 960px) {
+        height: calc(100% / 3 * 2);
+    }
+}
+
+/* Padding element */
+.padding-H2-p {
+    padding-bottom: 58px;
+}
+
+.padding-H2-p-container {
+    padding: 53px 56px 100px 96px; 
+}
+
+.padding-hero-cta {
+    padding: 36px 52px 48px 52px; 
+}
+
+/* text */
+.H2-p {
+    font-family: $body-font;
+    font-weight: $text-with-h2-weight;
+    font-size: $text-with-h2-size-mobile;
+    line-height: $text-with-h2-line-mobile;
+
+    @media screen and (min-width: 900px) {
+
+        font-size: $text-with-h2-size-desktop;
+        line-height: $text-with-h2-line-desktop;
+    }
+}
+
+
+

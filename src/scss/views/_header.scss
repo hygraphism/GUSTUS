@@ -13,6 +13,7 @@ header {
         border: 3px solid $rouge-tomate;
         transition: all ease-in-out 0.25s;
         text-align: center;
+        display: none;
 
         div {
             gap: 10px;
@@ -27,6 +28,7 @@ header {
 
     .mainMenu.isVisible {
         left: 20px;
+        display: block;
     }
 
     @media screen and (min-width: 900px) {
@@ -34,7 +36,7 @@ header {
             display: none;
         }
     
-        .mainMenu {
+        .mainMenu, .mainMenu.isVisible {
             position: static;
             border: none;
             gap: 0px;

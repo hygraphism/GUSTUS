@@ -8,7 +8,7 @@ $font-family-Quicksand-medium : "Quicksand", sans-serif;
 $font-family-Quicksand-semibold : "Quicksand", sans-serif;
 $font-family-Quicksand-bold : "Quicksand", sans-serif;*/
 /*Text*/
-.btn_red_full {
+.btn__red__full {
   width: -moz-fit-content;
   width: fit-content;
   font-family: "Quicksand", sans-serif;
@@ -22,19 +22,19 @@ $font-family-Quicksand-bold : "Quicksand", sans-serif;*/
   align-items: center;
   cursor: pointer; /* Add a pointer cursor on mouse-over */
 }
-.btn_red_full:hover {
+.btn__red__full:hover {
   border: none;
 }
 @media screen and (min-width: 900px) {
-  .btn_red_full {
+  .btn__red__full {
     font-size: 2.8rem;
   }
-  .btn_red_full:hover {
+  .btn__red__full:hover {
     border: none;
   }
 }
 
-.btn_white_full {
+.btn__white__full {
   width: -moz-fit-content;
   width: fit-content;
   font-family: "Quicksand", sans-serif;
@@ -48,50 +48,56 @@ $font-family-Quicksand-bold : "Quicksand", sans-serif;*/
   align-items: center;
   cursor: pointer; /* Add a pointer cursor on mouse-over */
 }
-.btn_white_full:hover {
+.btn__white__full:hover {
   border: 3px solid #FFFCED;
   background: #D90718;
   color: #FFFCED;
 }
 @media screen and (min-width: 900px) {
-  .btn_white_full {
+  .btn__white__full {
     font-size: 2.8rem;
   }
-  .btn_white_full:hover {
+  .btn__white__full:hover {
     border: 3px solid #FFFCED;
     background: #D90718;
     color: #FFFCED;
   }
 }
 
-.btn_cta {
+.btn__cta {
   width: -moz-fit-content;
   width: fit-content;
   font-family: "Quicksand", sans-serif;
   font-weight: 700;
-  font-size: 5.2rem;
+  font-size: 2.8rem;
   border-radius: 12px;
   border: 3px solid #D90718;
   background: #FFFCED;
   color: #D90718;
-  padding: 14px 112px;
+  padding: 7px 45px;
   align-items: center;
   cursor: pointer; /* Add a pointer cursor on mouse-over */
 }
-.btn_cta:hover {
+.btn__cta:hover {
   border: 3px solid #FFFCED;
   background: #D90718;
   color: #FFFCED;
 }
 @media screen and (min-width: 900px) {
-  .btn_cta {
-    font-size: 2.8rem;
+  .btn__cta {
+    font-size: 4.8rem;
+    padding: 14px 112px;
   }
-  .btn_cta:hover {
-    border: 3px solid #FFFCED;
-    background: #D90718;
-    color: #FFFCED;
+}
+@media screen and (min-width: 1280px) {
+  .btn__cta {
+    font-size: 6.8rem;
+    padding: 14px 112px;
   }
+}
+
+* {
+  margin: 0;
 }
 
 html {
@@ -118,15 +124,185 @@ h1 {
 }
 @media screen and (min-width: 900px) {
   h1 {
+    font-size: 14.4rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  h1 {
     font-size: 22.4rem;
   }
 }
 
 h2 {
   font-family: "Quicksand", sans-serif;
-  font-size: 6.8rem;
+  font-size: 3.6rem;
   font-weight: 700;
-  line-height: 80px;
+  line-height: 45px;
+}
+@media screen and (min-width: 900px) {
+  h2 {
+    font-size: 6.8rem;
+    line-height: 80px;
+  }
+}
+
+h3 {
+  font-family: "Pacifico", serif;
+  font-size: 7.2rem;
+  font-weight: 400;
+  line-height: 0px;
+}
+@media screen and (min-width: 900px) {
+  h3 {
+    font-size: 14rem;
+  }
+}
+
+/* Background Color element */
+.elementGreen {
+  background-color: #57751F;
+}
+
+.elementGreen-borderColor {
+  border-color: #57751F;
+}
+
+.elementYellow {
+  background-color: #F29F05;
+}
+
+.elementYellow-borderColor {
+  border-color: #F29F05;
+}
+
+.elementLightblue {
+  background-color: #9EA5D3;
+}
+
+.elementLightblue-borderColor {
+  border-color: #9EA5D3;
+}
+
+.elementPink {
+  background-color: #F2A7B5;
+}
+
+.elementPink-borderColor {
+  border-color: #F2A7B5;
+}
+
+.elementCremeRed {
+  background-color: #FFFCED;
+}
+
+.elementCremeRed-borderColor {
+  border-color: #D90718;
+}
+
+.elementDarkblue {
+  background-color: #24376E;
+}
+
+.elementDarkblue-borderColor {
+  border-color: #24376E;
+}
+
+/* Border element */
+.elementBorder {
+  border-width: 3px solid;
+}
+
+.elementBorderRadius-in {
+  border-radius: 12px;
+}
+
+.elementBorderRadius-out {
+  border-radius: 24px;
+}
+
+/* width element */
+.element-1-2 {
+  width: 100%;
+}
+@media screen and (min-width: 960px) {
+  .element-1-2 {
+    width: 50%;
+  }
+}
+
+.element-1-4 {
+  width: 50%;
+}
+@media screen and (min-width: 960px) {
+  .element-1-4 {
+    width: 25%;
+  }
+}
+
+.element-2-3 {
+  width: 100%;
+}
+@media screen and (min-width: 960px) {
+  .element-2-3 {
+    width: 66.6666666667%;
+  }
+}
+
+.element-1-3 {
+  width: 100%;
+}
+@media screen and (min-width: 960px) {
+  .element-1-3 {
+    width: 33.3333333333%;
+  }
+}
+
+/* height element */
+.element-height-1-3 {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+@media screen and (min-width: 960px) {
+  .element-height-1-3 {
+    height: 33.3333333333%;
+  }
+}
+
+.element-height-2-3 {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+@media screen and (min-width: 960px) {
+  .element-height-2-3 {
+    height: 66.6666666667%;
+  }
+}
+
+/* Padding element */
+.padding-H2-p {
+  padding-bottom: 58px;
+}
+
+.padding-H2-p-container {
+  padding: 53px 56px 100px 96px;
+}
+
+.padding-hero-cta {
+  padding: 36px 52px 48px 52px;
+}
+
+/* text */
+.H2-p {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.8rem;
+}
+@media screen and (min-width: 900px) {
+  .H2-p {
+    font-size: 3rem;
+    line-height: 3.8rem;
+  }
 }
 
 header {
@@ -146,6 +322,7 @@ header .mainMenu {
   border: 3px solid #D90718;
   transition: all ease-in-out 0.25s;
   text-align: center;
+  display: none;
 }
 header .mainMenu div {
   gap: 10px;
@@ -157,12 +334,13 @@ header .mainMenu img {
 }
 header .mainMenu.isVisible {
   left: 20px;
+  display: block;
 }
 @media screen and (min-width: 900px) {
   header .hamburger {
     display: none;
   }
-  header .mainMenu {
+  header .mainMenu, header .mainMenu.isVisible {
     position: static;
     border: none;
     gap: 0px;
@@ -173,11 +351,11 @@ header .mainMenu.isVisible {
     flex-direction: row;
     margin-bottom: 28px;
   }
-  header .mainMenu img {
+  header .mainMenu img, header .mainMenu.isVisible img {
     display: inline;
     width: 68px;
   }
-  header .mainMenu div {
+  header .mainMenu div, header .mainMenu.isVisible div {
     width: -moz-fit-content;
     width: fit-content;
     gap: 63px;
@@ -190,72 +368,77 @@ header .mainMenu.isVisible {
   display: flex;
   width: 100%;
   gap: 1%;
+  text-align: center;
 }
-.hero_half {
+.hero__half {
   display: flex;
   flex-direction: column;
-  width: 50%;
   gap: 2%;
-  text-align: center;
+  height: 966px;
 }
-.hero_half_h1_container {
-  width: 100%;
+.hero__half__h1__container {
+  padding-top: 120px;
   text-align: center;
+  overflow: hidden;
 }
-.hero_half_cta {
+.hero__half__cta {
   color: #FFFCED;
-  border-radius: 12px;
-  border: 3px solid #57751F;
-  background-color: #57751F;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   text-align: start;
-  padding: 45px 36px;
 }
-.hero_half_cta_title_text {
-  margin-bottom: 80px;
+.hero__half__cta__title__text {
+  margin-bottom: 28px;
 }
-.hero_half_cta_title_text h2 {
-  width: 66%;
-  margin-bottom: 67px;
+.hero__half__hello {
+  padding: 28px;
 }
-.hero_half_cta_title_text p {
-  font-family: "Quicksand", sans-serif;
-  font-size: 3rem;
-  font-weight: 600;
-  line-height: 3.8rem;
+.hero__half__hello img {
+  width: 80%;
 }
-.hero_half_hello {
+.hero__half__images__container {
   display: flex;
-  gap: 1%;
-  padding: 20px 64px;
-  border-radius: 12px;
-  border: 3px solid #F29F05;
-  background-color: #F29F05;
-}
-.hero_half_images_container {
-  display: flex;
-  width: 100%;
-  height: 99%;
   gap: 2%;
 }
-.hero_spoon_artifice_container {
-  border-radius: 12px;
-  border: 3px solid #24376E;
-  background-color: #24376E;
+.hero__half__spoon__artifice__container {
+  overflow: hidden;
+}
+.hero__half .spoonWidth {
   width: 100%;
-  height: 99%;
 }
-.hero_spoon_artifice_content {
-  align-self: center;
-}
-.hero_tupp_container {
-  border-radius: 12px;
-  border: 3px solid #9EA5D3;
-  background-color: #9EA5D3;
+.hero__half .tuppWidth {
   width: 100%;
-  height: 99%;
 }
-.hero_tupp_content {
-  align-self: center;
+.hero__spoon__artifice__container {
+  height: 100%;
+}
+.hero__spoon__artifice__content {
+  text-align: center;
+}
+.hero__tupp__container {
+  height: 100%;
+}
+.hero__tupp__content {
+  text-align: center;
+}
+@media screen and (max-width: 960px) {
+  .hero {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/* step flex */
+.elementVertical {
+  display: flex;
+  justify-content: space-between;
+}
+
+.elementHorizontal {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
 }
 
 /* gustus *//*# sourceMappingURL=app.css.map */
