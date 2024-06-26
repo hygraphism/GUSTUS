@@ -7,6 +7,7 @@ burgerButton.addEventListener('click', function(){
   burgerButton.classList.toggle('is-active')
 })
 
+/**** landing page ****/
 /* hero animation hover*/
 /////spoon
 let spoon__animation = document.querySelector('.hero__spoon__artifice__content');
@@ -62,3 +63,45 @@ tuppPlay.addEventListener('DOMLoaded', function() {
   })
 
 });
+
+/* categories animations */
+
+
+/* about animations */
+let fouet__animation = document.querySelector('.fouet_chargement_creme');
+/*let blockFouet = document.getElementById('fouetAbout'); */
+
+let fouetPlay = lottie.loadAnimation({
+    container: fouet__animation,
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    prerender: true,
+    path: "../dist/lotti/chargement_icon_creme.json"
+});
+
+/*
+blockFouet.addEventListener('mouseenter', function() {
+  fouetPlay.playSegments([0,74],true);
+});
+
+blockFouet.addEventListener('mouseleave', function(){
+  fouetPlay.playSegments([73,74],true);
+})*/
+
+
+
+/* FAQ */
+
+
+/* before footer cta */
+
+
+
+/**** chat gustus ****/
+/* chat gustus overview */
+/* calendar overview */
+/* shopping list scroll */
+/* profil scroll and delete */
+/* batch cooking scroll and pop up */
+/* recepies slider and pop up */

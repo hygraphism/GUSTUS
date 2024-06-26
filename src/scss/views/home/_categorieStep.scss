@@ -1,13 +1,58 @@
-/* step flex */
-.elementVertical {
-    display: flex;
-    justify-content: space-between;
 
-}
 
-.elementHorizontal {
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
+/**/
+
+.description {
+
+    &__title__text {
+        h2 {
+            color: $rouge-tomate;
+        }
+
+        p {
+            color: $bleu-myrtille;
+        } 
+    }
+
+    &__container {
+        height: fit-content;
+        padding: 54px 113px;
+        margin-top: 134px;
+
+        &__step__container {
+            width: 100%;
+        }
+
+        &__step__1 {
+            color: $creme-chantilly;
+        }
+
+        &__step__2 {
+            color: $rouge-tomate;
+        }
+
+        &__step__3 {
+            color: $creme-chantilly;
+        }
+
+        &__step__4 {
+            color: $rouge-tomate;
+        }
+
+        &__step__5 {
+            color: $creme-chantilly;
+        }
+
+        &__step__6 {
+            color: $rouge-tomate;
+        }
+
+  /*  &__text {
+
+        &__title {
+            
+        }
+    }*/
+    }
 }
 
