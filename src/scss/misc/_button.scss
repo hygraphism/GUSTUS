@@ -3,12 +3,12 @@
     width: fit-content;
     font-family: $body-font;
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 2.8rem;
     border-radius: 12px;
     border: 3px solid $rouge-tomate;
     background: $rouge-tomate;
     color: $creme-chantilly;
-    padding: 7px 45px;
+    padding: 12px 44px;
     align-items: center;
     cursor: pointer; /* Add a pointer cursor on mouse-over */
 
@@ -16,13 +16,18 @@
         border: none;
     }
 
-    @media screen and (min-width: 900px) {
-        font-size: 2.8rem;
-
-        &:hover {
-            border: none;
-        }
+    &:focus {
+        border: 3px solid $bleu-passeoire;
+        background: $bleu-passeoire;
+        color: $creme-chantilly; 
     }
+
+    &:disabled {
+        color: #4B4B4B;
+        background: $creme-chantilly;
+        border: 3px solid #4B4B4B;
+    }
+
 
 }
 
@@ -31,12 +36,12 @@
     width: fit-content;
     font-family: $body-font;
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 2.8rem;
     border-radius: 12px;
     border: 3px solid $creme-chantilly;
     background: $creme-chantilly;
     color: $rouge-tomate;
-    padding: 7px 45px;
+    padding: 12px 44px;
     align-items: center;
     cursor: pointer; /* Add a pointer cursor on mouse-over */
 
@@ -46,18 +51,21 @@
         color: $creme-chantilly; 
     }
 
-    @media screen and (min-width: 900px) {
-        font-size: 2.8rem;
+    &:focus {
+        border: 3px solid $bleu-passeoire;
+        background: $bleu-passeoire;
+        color: $creme-chantilly; 
+    }
 
-        &:hover {
-            border: 3px solid $creme-chantilly;
-            background: $rouge-tomate;
-            color: $creme-chantilly; 
-        }
+    &:disabled {
+        color: #4B4B4B;
+        background: $creme-chantilly;
+        border: 3px solid #4B4B4B;
     }
 }
 
-.btn__cta { 
+.btn__white__red { 
+
     width: fit-content;
     font-family: $body-font;
     font-weight: 700;
@@ -66,7 +74,7 @@
     border: 3px solid $rouge-tomate;
     background: $creme-chantilly;
     color: $rouge-tomate;
-    padding: 7px 45px;
+    padding: 12px 44px;
     align-items: center;
     cursor: pointer; /* Add a pointer cursor on mouse-over */
 
@@ -76,13 +84,110 @@
         color: $creme-chantilly; 
     }
 
-    @media screen and (min-width: 900px) {
-        font-size: 4.8rem;
-        padding: 14px 112px;
+    &:focus {
+        border: 3px solid $bleu-passeoire;
+        background: $bleu-passeoire;
+        color: $creme-chantilly; 
     }
 
-    @media screen and (min-width: 1280px) {
-        font-size: 6.8rem;
-        padding: 14px 112px;
+    &:disabled {
+        color: #4B4B4B;
+        background: $creme-chantilly;
+        border: 3px solid #4B4B4B;
+    }
+}
+
+.btn__yellow__full { 
+
+    width: fit-content;
+    font-family: $body-font;
+    font-weight: 700;
+    font-size: 2.8rem;
+    border-radius: 12px;
+    border: 3px solid $jaune-curcuma;
+    background: $jaune-curcuma;
+    color: $creme-chantilly;
+    padding: 12px 44px;
+    align-items: center;
+    cursor: pointer; /* Add a pointer cursor on mouse-over */
+
+    &:hover {
+        border: none;
+    }
+
+    &:focus {
+        border: 3px solid $bleu-passeoire;
+        background: $bleu-passeoire;
+        color: $creme-chantilly; 
+    }
+
+    &:disabled {
+        color: #4B4B4B;
+        background: $creme-chantilly;
+        border: 3px solid #4B4B4B;
+    }
+}
+
+.btn__darkBlue__full { 
+
+    width: fit-content;
+    font-family: $body-font;
+    font-weight: 700;
+    font-size: 2.8rem;
+    border-radius: 12px;
+    border: 3px solid $bleu-myrtille;
+    background: $bleu-myrtille;
+    color: $creme-chantilly;
+    padding: 12px 44px;
+    align-items: center;
+    cursor: pointer; /* Add a pointer cursor on mouse-over */
+
+    &:hover {
+        border: none;
+    }
+
+    &:focus {
+        border: 3px solid $bleu-passeoire;
+        background: $bleu-passeoire;
+        color: $creme-chantilly; 
+    }
+
+    &:disabled {
+        color: #4B4B4B;
+        background: $creme-chantilly;
+        border: 3px solid #4B4B4B;
+    }
+}
+
+.btn__white__darkBlue { 
+
+    width: fit-content;
+    font-family: $body-font;
+    font-weight: 700;
+    font-size: 2.8rem;
+    border-radius: 12px;
+    border: 3px solid $bleu-myrtille;
+    background: $creme-chantilly;
+    color: $bleu-myrtille;
+    padding: 12px 44px;
+    align-items: center;
+    cursor: pointer; /* Add a pointer cursor on mouse-over */
+
+    &:hover {
+        border: 3px solid $creme-chantilly;
+        background: $bleu-myrtille;
+        color: $creme-chantilly; 
+    }
+
+    &:focus {
+        border: 3px solid $bleu-passeoire;
+        background: $bleu-passeoire;
+        color: $creme-chantilly; 
+    }
+
+    &:disabled {
+        color: #4B4B4B;
+        background: $creme-chantilly;
+        border: 3px solid #4B4B4B;
     }
 }
