@@ -2,8 +2,12 @@
     color: $creme-chantilly;
     margin-top: 134px;
 
-    img {
-        width: 100%;
+    &__title__text__content {
+        text-align: center;
+        padding: 8%;
     }
 
+    .about__image__container {
+        text-align: center;
+    }
 }

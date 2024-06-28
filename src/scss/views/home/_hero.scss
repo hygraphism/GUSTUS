@@ -8,10 +8,9 @@
     &__half {
         display: flex;
         flex-direction: column;
-        gap: $gap;
+        justify-content: space-between;
         align-items: center;
-        justify-content: center;
-        
+
         &__cta__content {
             display: flex;
             width: 747px;
@@ -31,8 +30,6 @@
                 }
 
                 &__title {
-                    width: 500px;
-
                     display: flex;
                     flex-direction: column;
                     align-items: center;
@@ -50,13 +47,14 @@
             width: 100%;
 
             img {
-                width: 70%;
+                width: 99%;
+                height: 99%;
             }
         }
 
         &__images__container {
             display: flex;
-            gap: $gap;
+            justify-content: space-between;
         }
     }
 
@@ -72,7 +70,7 @@
 
     &__tupp {
         &__container {
-            height: 100%;
+            overflow: hidden;
         }
         
         &__content {
@@ -82,6 +80,19 @@
 
     @media screen and (max-width: 960px) {
         flex-direction: column;
-        gap: $gap;
-    }
+        justify-content: space-between;
+
+        &__half {
+            gap: $gap;
+
+            &__images__container {
+                gap: $gap;
+            }
+
+            &__cta__content {
+                width: min-content;
+            }
+
+        }
+    }    
 }

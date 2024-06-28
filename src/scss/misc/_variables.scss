@@ -9,13 +9,6 @@ $bleu-myrtille: #24376E;
 
 
 /*Typos*/
-/*$font-family-Pacifico : "Pacifico", cursive;
-$font-family-Quicksand-light : "Quicksand", sans-serif;
-$font-family-Quicksand-regular : "Quicksand", sans-serif;
-$font-family-Quicksand-medium : "Quicksand", sans-serif;
-$font-family-Quicksand-semibold : "Quicksand", sans-serif;
-$font-family-Quicksand-bold : "Quicksand", sans-serif;*/
-
 $head-font : "Pacifico", serif;
 $body-font : "Quicksand", sans-serif;
 
@@ -30,5 +23,43 @@ $text-with-h2-line-tablette: 33px;
 $text-with-h2-size-mobile: 2rem;
 $text-with-h2-line-mobile: 28px;
 
+$text-step-weight: 600;
+$text-step-size-mobile: 1.6rem;
+$text-step-line-mobile: 24px;
+
+$text-step-size-tablette: 2rem;
+$text-step-line-tablette: 28px;
+
+$text-step-size-desktop: 3rem;
+$text-step-line-desktop: 38px;
+
+$text-with-h4-weight: 600;
+$text-with-h4-size-mobile: 1.4rem;
+$text-with-h4-line-mobile: 22px;
+
+$text-with-h4-size-tablette: 2rem;
+$text-with-h4-line-tablette: 28px;
+
+$text-with-h4-size-desktop: 2.4rem;
+$text-with-h4-line-desktop: 32px;
+
+$link-footer-weight: 700;
+$link-footer-size-mobile: 1.4rem;
+
+$link-footer-size-desktop: 2rem;
+
+$footer-credits-weight: 400;
+$footer-credits-size-mobile: 1.6rem;
+$footer-credits-line-mobile: 20px;
+
+$footer-credits-size-desktop: 1.4rem;
+$footer-credits-line-desktop: 18px;
+
 /*gap*/
 $gap: 20px;
+$gap-desktop: 28px;
+$gap-mobile: 16px;
+$gap-categorie: 100px;
+$gap-categorie-mobile: 28px;
+$gap-footer-link: 158px;
+$gap-footer-social: 68px;

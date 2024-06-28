@@ -1,0 +1,21 @@
+.footer__cta {
+    margin: 140px 0;
+
+    .footer__cta__spoon {
+        width: 15%;
+    }
+
+    .footer__cta__fiche {
+        width: 15%;
+    }
+
+    .footer__cta__content__title__btn {
+        text-align: center;
+        width: 50%;
+
+        h2 {
+            color: $creme-chantilly;
+            margin-bottom: 64px;
+        }
+    }
+}

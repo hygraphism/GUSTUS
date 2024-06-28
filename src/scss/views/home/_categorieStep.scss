@@ -1,23 +1,28 @@
-
-
-/**/
-
 .description {
-
-    &__title__text {
-        h2 {
-            color: $rouge-tomate;
-        }
-
-        p {
-            color: $bleu-myrtille;
-        } 
-    }
 
     &__container {
         height: fit-content;
-        padding: 54px 113px;
         margin-top: 134px;
+        margin-left: 8%;
+        margin-right: 8%;
+
+        &__image__title__text {
+            margin-bottom: $gap-categorie;
+            margin-left: 8%;
+            margin-right: 8%;
+
+            img {
+                width: 25%;
+            }
+
+            h2 {
+                color: $rouge-tomate;
+            }
+    
+            p {
+                color: $bleu-myrtille;
+            } 
+        }
 
         &__step__container {
             width: 100%;
@@ -33,26 +38,34 @@
 
         &__step__3 {
             color: $creme-chantilly;
+            
+            .step3 {
+                width: 93%;
+                height: 93%;
+            }
         }
 
         &__step__4 {
             color: $rouge-tomate;
+            
+            .step4 {
+                width: 50%;
+                height: 50%;
+            }
         }
 
         &__step__5 {
             color: $creme-chantilly;
+            
+            .step5 {
+                width: 50%;
+                height: 50%;
+            }
         }
 
         &__step__6 {
             color: $rouge-tomate;
         }
-
-  /*  &__text {
-
-        &__title {
-            
-        }
-    }*/
     }
 }
 
