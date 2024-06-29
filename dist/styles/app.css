@@ -273,11 +273,23 @@ h4 {
 
 h5 {
   font-family: "Pacifico", serif;
-  font-size: 1.8rem;
+  text-decoration: underline;
+  font-size: 2.2rem;
   font-weight: 400;
 }
 @media screen and (min-width: 900px) {
   h5 {
+    font-size: 2.8rem;
+  }
+}
+
+h6 {
+  font-family: "Pacifico", serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+@media screen and (min-width: 900px) {
+  h6 {
     font-size: 2.8rem;
   }
 }
@@ -494,6 +506,15 @@ h5 {
   }
 }
 
+.padding-chat-box {
+  padding: 80px 48px;
+}
+@media screen and (min-width: 960px) {
+  .padding-chat-box {
+    padding: 70px 60px;
+  }
+}
+
 /* text */
 .H2-p {
   font-family: "Quicksand", sans-serif;
@@ -582,8 +603,25 @@ h5 {
 /* step flex */
 .elementVertical {
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
+  gap: 20px;
+}
+
+.elementVertical-chatleft {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+@media screen and (min-width: 960px) {
+  .elementVertical-chatleft {
+    gap: 38px;
+  }
+}
+
+.elementVertical-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 20px;
 }
 
@@ -745,7 +783,7 @@ footer .footer__content__logo {
     margin-bottom: 100px;
   }
 }
-footer h5 {
+footer h6 {
   color: #FFFCED;
 }
 footer .span-footer {
@@ -962,4 +1000,42 @@ footer .span-footer-credits {
   margin-bottom: 64px;
 }
 
-/* gustus *//*# sourceMappingURL=app.css.map */
+/* gustus */
+/* HTML: <div class="tooltip">This is a Speech Bubble with a solid coloration and with border radius </div> */
+.tooltip {
+  color: #24376E;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  max-width: 28ch;
+  text-align: left;
+}
+
+.tooltip {
+  /* triangle dimension */
+  --b: 15px; /* control the base */
+  --h: 5px; /* control the height */
+  --c:#D7D7DA;
+  padding: 12px 30px;
+  border-radius: 12px;
+  border-bottom-left-radius: 0;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, var(--b) 100%, calc(-1 * var(--h)) calc(100% + var(--h)), 0 calc(100% - var(--b)));
+          clip-path: polygon(0 0, 100% 0, 100% 100%, var(--b) 100%, calc(-1 * var(--h)) calc(100% + var(--h)), 0 calc(100% - var(--b)));
+  background: var(--c);
+  -o-border-image: conic-gradient(var(--c) 0 0) 0 0 999 999/0 0 calc(var(--h) + var(--b)) calc(var(--h) + var(--b))/0 0 var(--h) var(--h);
+     border-image: conic-gradient(var(--c) 0 0) 0 0 999 999/0 0 calc(var(--h) + var(--b)) calc(var(--h) + var(--b))/0 0 var(--h) var(--h);
+}
+
+.btn__enregistrez__chat {
+  margin: 130px 0;
+}
+@media screen and (min-width: 960px) {
+  .btn__enregistrez__chat {
+    margin: 230px 0 160px 0;
+  }
+}
+
+.chat__container__content {
+  text-align: center;
+}/*# sourceMappingURL=app.css.map */

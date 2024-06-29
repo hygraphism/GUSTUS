@@ -13,22 +13,94 @@
     <link rel="stylesheet" href="dist/styles/app.css">
 </head>
 <body>
-    <header>
-        <nav class="mainMenu">
-            <a href="index.html"><img class="logo__nav" src="dist/images/nav_logo.svg" alt="logo gustus"></a>
-            <div>
-                <button class="btn__white__full"><a href="chatGustus.html">Planifier</a></button>
-                <button class="btn__white__full"><a href="#"></a>Compte</button>
+    <section class="mainContainer">
+        <header>
+            <nav class="mainMenu">
+                <a href="index.html"><img class="logo__nav" src="dist/images/nav_logo.svg" alt="logo gustus"></a>
+                <div>
+                    <button class="btn__white__full"><a href="chatGustus.html">Planifier</a></button>
+                    <button class="btn__white__full"><a href="#"></a>Compte</button>
+                </div>
+                <button class="btn__white__red"><a href="#">Connexion</a></button>
+            </nav>
+            <button class="hamburger hamburger--elastic" type="button">
+                <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </header>
+        <section class="chat__and__other elementHorizontal-toVertical element-height-1">
+            <div class="chat__container elementCremeRed-borderColor elementBorder elementBorderRadius-in element-1-2 element-height-1 padding-chat-box">
+                <div class="chat__container__content">
+                    <div class="chat__container__content__logo__texte elementHorizontal">
+                        <img src="dist/images/gustus-chat.svg" alt="logo gustus chat">
+                        <div class="bulle__chat__container elementVertical-chatleft">
+                            <div class="tooltip">Votre organisation meal prep est livré !</div>
+                            <div class="tooltip">Voulais vous enregistrer vos informations dans votre compte client ?</div>
+                        </div>
+                    </div>
+                    <button class="btn__darkBlue__full btn__enregistrez__chat">Enregistrer</button>
+                </div>
             </div>
-            <button class="btn__white__red"><a href="#">Connexion</a></button>
-        </nav>
-        <button class="hamburger hamburger--elastic" type="button">
-            <span class="hamburger-box">
-              <span class="hamburger-inner"></span>
+            <div class="other__container elementHorizontal-toVertical element-1-2 element-height-1">
+                <div class="other__container__left elementVertical element-1-2 element-height-1">
+                    <div class="other__container__left__calendar"></div>
+                    <div class="other__container__left__profil elementYellow-borderColor elementBorder elementBorderRadius-in">
+                        <h5>Profil(s)</h5>
+                    </div>
+                </div>
+                <div class="other__container__right__shoppingList elementGreen-borderColor elementBorder elementBorderRadius-in element-1-2 element-height-1">
+                    <h5>Liste de courses</h5>
+                </div>
+            </div>
+        </section>
+        <section class="batch__and__recipe elementHorizontal-toVertical">
+            <div class="other__container__batchCooking elementPink-borderColor elementBorder elementBorderRadius-in element-1-2">
+                <h5>Batch Cooking</h5>
+            </div>
+            <div class="other__container__recipe elementLightblue-borderColor elementBorder elementBorderRadius-in element-1-2">
+                <h5>Recettes</h5>
+            </div>
+        </section>
+    </section>
+    <footer class="footer elementDarkblue">
+        <div class="footer__content padding-footer-content">
+            <div class="footer__content__logo elementHorizontal-toVertical-footer">
+                <a href="index.html"><img src="dist/images/logo-footer.svg" alt="logo gustus"></a>
+                <div class="footer__content__logo__link elementHorizontal-footer">
+                    <div class="elementVertical-footer">
+                        <h6>Lien rapides</h6>
+                        <span class="span-footer"><a href="index.html">Accueil</a></span>
+                        <span class="span-footer"><a href="chatGustus.html">Parlez à Gustus</a></span>
+                        <span class="span-footer"><a href="#">Compte utilisateur</a></span>
+                        <span class="span-footer"><a href="#">Connexion</a></span>
+                        <span class="span-footer"><a href="#">Inscription</a></span>
+                    </div>
+                    <div class="elementVertical-footer">
+                        <h6>Contact</h6>
+                        <span class="span-footer"><a href="#">contact@gustus.com</a></span>
+                        <span class="span-footer"><a href="#">123 Rue de la Cuisine, Paris, FR</a></span>
+                    </div>
+                </div>
+                <div class="elementVertical-center">
+                    <span class="span-footer">
+                        Concocté avec ❤️ par Marmiton
+                    </span>
+                    <div class="elementHorizontal">
+                        <a href="#"><img src="dist/images/marmiton_icon.svg" alt="marmiton"></a>
+                        <a href="#"><img src="dist/images/facebook_icon.svg" alt="facebook"></a>
+                        <a href="#"><img src="dist/images/instagram_icon.svg" alt="instagram"></a>
+                        <a href="#"><img src="dist/images/twitter_icon.svg" alt="twitter"></a>
+                    </div>
+                </div>
+            </div>
+            <span class="span-footer-credits">
+                © 2024 Gustus. Tous droits réservés. Politique de protection des données personnelles. Conditions Générales d’utilisation
             </span>
-        </button>
-    </header>
+        </div>
+    </footer>
     <script src="dist/scripts/lottie.js"></script>
     <script src="dist/scripts/main.js"></script>
 </body>
+
 </html>
