@@ -339,6 +339,8 @@ blockSpoonBtn.addEventListener('mouseleave', function(){
 /* chat gustus overview */
 /* calendar overview */
 /* shopping list scroll */
+
+
 /* profil scroll and delete */
 /* batch cooking scroll and pop up */
 /* recepies slider and pop up */
