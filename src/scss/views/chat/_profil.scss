@@ -1,0 +1,48 @@
+.other__container__left__profil {
+    height: 515px;
+    overflow: auto;
+
+    &__header {
+        padding-top: 20px;
+        position: static;
+
+        h5 {
+            text-align: center;
+            color: $jaune-curcuma;
+        }
+    }
+
+    &__content {
+        overflow-y: scroll;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: $gap-desktop;
+        height: 100%;
+        padding: 20px 0;
+
+        &__carteProfil {
+            display: flex;
+            gap: 15px;
+            padding: 10px 41px 7px 40px;
+            position: relative;
+
+            .delete-icon-profil {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                cursor: pointer;
+            }
+
+            &__picture__name {
+                text-align: center;
+
+                h5 {
+                    color: $bleu-myrtille;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+}

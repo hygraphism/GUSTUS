@@ -1,4 +1,9 @@
-/* HTML: <div class="tooltip">This is a Speech Bubble with a solid coloration and with border radius </div> */
+.chat__and__other {
+  height: fit-content;
+  margin-bottom: $gap;
+}
+
+
 .tooltip {
     color: $bleu-myrtille;
     font-family: $body-font;

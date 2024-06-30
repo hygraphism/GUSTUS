@@ -3,7 +3,7 @@
     flex-direction: column;
     background-color: $creme-chantilly;
     overflow: hidden;
-    height: fit-content;
+    height: 900px;
 
     h5 {
         color: $vert-pois;
@@ -18,14 +18,13 @@
     }
 
     &__content {
-        display: flex;
-        overflow-y: auto;
+        display: flex; 
+        overflow-y: scroll;
         height: 100%;
         position: relative;
     }
 
     .title {
-        flex-grow: 1;
         text-align: center;
         margin: 0 10px;
     }
@@ -37,24 +36,20 @@
         align-items: center;
         justify-content: start;
         padding: 10px;
-        height: 100%;
         width: 25%;
         box-sizing: border-box;
-        gap: 25px;
+        gap: 24px;
     }
 
     input[type="checkbox"] {
-        appearance: none;
+        /*appearance: none;*/
         background-color: $creme-chantilly;
-        margin: 0;
-        font: inherit;
         color: $jaune-curcuma;
         width: 16px;
         height: 16px;
         border: 3px solid $jaune-curcuma;
         border-radius: 3px;
         transform: translateY(-0.075em);
-
         display: grid;
         place-content: center;
       }
@@ -69,7 +64,7 @@
       position: absolute;
       width: 16px;
       height: 3px;
-      background-color: #F29F05;
+      background-color: $jaune-curcuma;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%) rotate(45deg);
@@ -89,16 +84,14 @@
     .separator {
         width: 3px;
         background-color: $jaune-curcuma;
-    // height: 100%;
         transform: translateX(-50%);
+        height: 141%;
     }
 
     .items {
         display: flex;
         flex-direction: column;
         padding: 10px;
-        height: 100%;
-        width: 50%;
         box-sizing: border-box;
         gap: 1.6px;
     }

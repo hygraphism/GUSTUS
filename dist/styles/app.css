@@ -611,6 +611,39 @@ h6 {
   }
 }
 
+.calendar-title {
+  font-family: "Pacifico", serif;
+  font-weight: 400;
+  font-size: 2.8rem;
+}
+@media screen and (min-width: 490px) {
+  .calendar-title {
+    font-size: 2.2rem;
+  }
+}
+
+.calendar-number {
+  font-family: "Pacifico", serif;
+  font-weight: 400;
+  font-size: 2.2rem;
+}
+@media screen and (min-width: 490px) {
+  .calendar-number {
+    font-size: 2.8rem;
+  }
+}
+
+.calendar-weekdays {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+@media screen and (min-width: 490px) {
+  .calendar-weekdays {
+    font-size: 1.4rem;
+  }
+}
+
 /* step flex */
 .elementVertical {
   display: flex;
@@ -660,7 +693,6 @@ h6 {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  gap: 28px;
 }
 
 .elementHorizontal {
@@ -707,7 +739,6 @@ h6 {
   display: flex;
   align-items: flex-start;
   align-content: flex-start;
-  gap: 40px 28px;
   flex-wrap: wrap;
 }
 
@@ -1012,7 +1043,12 @@ footer .span-footer-credits {
 }
 
 /* gustus */
-/* HTML: <div class="tooltip">This is a Speech Bubble with a solid coloration and with border radius </div> */
+.chat__and__other {
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-bottom: 20px;
+}
+
 .tooltip {
   color: #24376E;
   font-family: "Quicksand", sans-serif;
@@ -1051,13 +1087,97 @@ footer .span-footer-credits {
   text-align: center;
 }
 
+.other__container__left__calendar {
+  padding: 22px 29px;
+}
+.other__container__left__calendar__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.other__container__left__calendar__header .prev, .other__container__left__calendar__header .next {
+  cursor: pointer;
+}
+.other__container__left__calendar__header .title {
+  color: #24376E;
+}
+.other__container__left__calendar__days {
+  display: flex;
+  justify-content: space-between;
+}
+.other__container__left__calendar__days .weekdays {
+  text-align: center;
+  color: #57751F;
+}
+.other__container__left__calendar__days__line {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.other__container__left__calendar__days .prev-month {
+  color: #D7D7DA;
+}
+.other__container__left__calendar__days .highlight-green {
+  text-decoration: underline;
+  text-decoration-color: #57751F;
+}
+.other__container__left__calendar__days .highlight-pink {
+  text-decoration: underline;
+  text-decoration-color: #F2A7B5;
+}
+.other__container__left__calendar__days .highlight-lightBlue {
+  text-decoration: underline;
+  text-decoration-color: #9EA5D3;
+}
+
+.other__container__left__profil {
+  height: 515px;
+  overflow: auto;
+}
+.other__container__left__profil__header {
+  padding-top: 20px;
+  position: static;
+}
+.other__container__left__profil__header h5 {
+  text-align: center;
+  color: #F29F05;
+}
+.other__container__left__profil__content {
+  overflow-y: scroll;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 28px;
+  height: 100%;
+  padding: 20px 0;
+}
+.other__container__left__profil__content__carteProfil {
+  display: flex;
+  gap: 15px;
+  padding: 10px 41px 7px 40px;
+  position: relative;
+}
+.other__container__left__profil__content__carteProfil .delete-icon-profil {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+}
+.other__container__left__profil__content__carteProfil__picture__name {
+  text-align: center;
+}
+.other__container__left__profil__content__carteProfil__picture__name h5 {
+  color: #24376E;
+  text-decoration: none;
+}
+
 .other__container__right__shoppingList {
   display: flex;
   flex-direction: column;
   background-color: #FFFCED;
   overflow: hidden;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 900px;
 }
 .other__container__right__shoppingList h5 {
   color: #57751F;
@@ -1071,12 +1191,11 @@ footer .span-footer-credits {
 }
 .other__container__right__shoppingList__content {
   display: flex;
-  overflow-y: auto;
+  overflow-y: scroll;
   height: 100%;
   position: relative;
 }
 .other__container__right__shoppingList .title {
-  flex-grow: 1;
   text-align: center;
   margin: 0 10px;
 }
@@ -1086,18 +1205,13 @@ footer .span-footer-credits {
   align-items: center;
   justify-content: start;
   padding: 10px;
-  height: 100%;
   width: 25%;
   box-sizing: border-box;
-  gap: 25px;
+  gap: 24px;
 }
 .other__container__right__shoppingList input[type=checkbox] {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  /*appearance: none;*/
   background-color: #FFFCED;
-  margin: 0;
-  font: inherit;
   color: #F29F05;
   width: 16px;
   height: 16px;
@@ -1134,13 +1248,12 @@ footer .span-footer-credits {
   width: 3px;
   background-color: #F29F05;
   transform: translateX(-50%);
+  height: 141%;
 }
 .other__container__right__shoppingList .items {
   display: flex;
   flex-direction: column;
   padding: 10px;
-  height: 100%;
-  width: 50%;
   box-sizing: border-box;
   gap: 1.6px;
 }
@@ -1151,4 +1264,180 @@ footer .span-footer-credits {
 }
 .other__container__right__shoppingList .item label {
   margin-left: 5px;
+}
+
+.batch__and__recipe {
+  margin-bottom: 70px;
+}
+
+.other__container__batchCooking {
+  position: relative;
+}
+.other__container__batchCooking__header {
+  margin-bottom: 20px;
+}
+.other__container__batchCooking__header h5 {
+  text-align: center;
+  color: #F2A7B5;
+}
+.other__container__batchCooking__header .open-overlay-batchCooking-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+.other__container__batchCooking__recipe__overview {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #fff;
+}
+.other__container__batchCooking__recipe__overview__content {
+  height: 550px;
+  overflow: auto;
+  border-bottom: none;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.other__container__batchCooking__recipe__overview__content__header {
+  display: flex;
+}
+.other__container__batchCooking__recipe__overview__content__header .batchcooking__header__left {
+  border-right: 3px solid #F29F05;
+  width: 30%;
+}
+.other__container__batchCooking__recipe__overview__content__header .batchcooking__header__left .date {
+  color: #9EA5D3;
+  text-align: center;
+  font-family: "Pacifico", serif;
+  font-size: 5.2rem;
+  font-weight: 400;
+  line-height: 80px;
+  border-bottom: 3px solid #F29F05;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.other__container__batchCooking__recipe__overview__content__header .batchcooking__header__left .peopleNumber__time {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 3px solid #F29F05;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+.other__container__batchCooking__recipe__overview__content__header .batchcooking__header__left .peopleNumber__time h5 {
+  text-decoration: none;
+  color: #24376E;
+}
+.other__container__batchCooking__recipe__overview__content__header .batchcooking__header__left .peopleNumber__time .peopleNumber {
+  display: flex;
+  gap: 8px;
+}
+.other__container__batchCooking__recipe__overview__content__header .batchcooking__header__left .peopleNumber__time .time {
+  display: flex;
+  gap: 8px;
+}
+.other__container__batchCooking__recipe__overview__content__header .batchcooking__header__right {
+  width: 70%;
+}
+.other__container__batchCooking__recipe__overview__content__header .batchcooking__header__right .batchCooking__title {
+  border-bottom: 3px solid #F29F05;
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.other__container__batchCooking__recipe__overview__content__header .batchcooking__header__right .batchCooking__title .recipe__title {
+  color: #D90718;
+  text-align: center;
+  font-family: "Pacifico", serif;
+  font-size: 5.2rem;
+  font-weight: 400;
+  line-height: 80px;
+}
+.other__container__batchCooking__recipe__overview__content__header .batchcooking__header__right .batchCooking__title .saving-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+.other__container__batchCooking__recipe__overview__content__header .batchcooking__header__right .batchCooking__subtitle {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-bottom: 3px solid #F29F05;
+  text-align: left;
+}
+.other__container__batchCooking__recipe__overview__content__header .batchcooking__header__right .batchCooking__subtitle h5 {
+  color: #24376E;
+  margin-left: 25px;
+}
+.other__container__batchCooking__recipe__overview__recipe {
+  overflow-y: scroll;
+  text-align: left;
+  display: flex;
+}
+.other__container__batchCooking__recipe__overview__recipe__ingredients {
+  width: 30%;
+  text-align: center;
+  padding: 6px;
+}
+.other__container__batchCooking__recipe__overview__recipe__recette {
+  width: 70%;
+  padding-left: 28px;
+  border-left: 3px solid #F29F05;
+}
+
+.other__container__recipe__header h5 {
+  text-align: center;
+  color: #9EA5D3;
+}
+.other__container__recipe .slider {
+  position: relative;
+  overflow: hidden;
+}
+.other__container__recipe .slider img {
+  width: 165%;
+}
+.other__container__recipe .prev, .other__container__recipe .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+.other__container__recipe .prev {
+  left: 10px;
+}
+.other__container__recipe .next {
+  right: 10px;
+  transform: rotate(180DEG);
+}
+.other__container__recipe .sliderContainer {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+.other__container__recipe .pagination {
+  width: 200px;
+  position: absolute;
+  top: 90%;
+  right: 37%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+  align-items: center;
+}
+.other__container__recipe .dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #989898;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+.other__container__recipe .dot.active {
+  height: 20px;
+  width: 20px;
+  background-color: #ffffff;
+  transition: all linear 0.4s;
 }/*# sourceMappingURL=app.css.map */

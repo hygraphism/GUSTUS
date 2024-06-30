@@ -1,0 +1,58 @@
+.other__container__left__calendar {
+    padding: 22px 29px;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+
+        .prev, .next {
+            cursor: pointer;
+        }
+
+        .title {
+            color: $bleu-myrtille;
+        }
+    }
+
+
+
+    &__days {
+        display: flex;
+        justify-content: space-between;
+
+        .weekdays {
+            text-align: center;
+            color: $vert-pois;
+
+        }
+
+        &__line {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .prev-month {
+            color: $fond-bulle-chat;
+        }
+
+        .highlight-green {
+            text-decoration: underline;
+            text-decoration-color: $vert-pois;
+        }
+
+        .highlight-pink {
+            text-decoration: underline;
+            text-decoration-color: $rose-bonbon;
+        }
+
+        .highlight-lightBlue {
+            text-decoration: underline;
+            text-decoration-color: $bleu-passeoire;
+        }
+
+        
+    }
+}

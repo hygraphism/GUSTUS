@@ -7,6 +7,104 @@ burgerButton.addEventListener('click', function(){
   burgerButton.classList.toggle('is-active')
 })
 
+/**** chat gustus ****/
+/* chat gustus overview */
+/* profil delete */
+document.addEventListener('DOMContentLoaded', function () {
+  const deleteIcons = document.querySelectorAll('.delete-icon-profil');
+
+  deleteIcons.forEach(icon => {
+      icon.addEventListener('click', function () {
+          const container = this.closest('.other__container__left__profil__content__carteProfil');
+          if (container) {
+              container.remove();
+          }
+      });
+  });
+});
+
+/* batch cooking scroll and pop up */
+/* recepies slider and pop up */
+const sliderContainer = document.querySelector(".sliderContainer")
+const slides = document.querySelectorAll('.slide')
+const prev = document.querySelector(".prev")
+const next = document.querySelector(".next")
+const paginationContainer = document.querySelector(".pagination")
+let currentSlide = 0
+let dots = []
+let sliderInterval = setInterval (
+    function() {
+        currentSlide++
+        if (currentSlide === slides.length) {
+           currentSlide = 0 
+        }
+        sliderContainer.style.transform = `translateX(${-960*currentSlide}px)`
+        updatePagination()
+    },
+3000
+)
+
+prev.addEventListener('click', function(){
+    currentSlide--
+    if (currentSlide < 0) {
+        currentSlide = slides.length - 1
+    }
+    sliderContainer.style.transform = `translateX(${-960*currentSlide}px)`
+    updatePagination()
+})
+
+next.addEventListener('click', function(){
+    currentSlide++
+    if (currentSlide === slides.length) {
+       currentSlide = 0 
+    }
+    sliderContainer.style.transform = `translateX(${-960*currentSlide}px)`
+    updatePagination()
+})
+
+sliderContainer.addEventListener('mouseover', function(){
+    clearInterval(sliderInterval)
+})
+
+sliderContainer.addEventListener('mouseout', function(){
+    sliderInterval = setInterval (
+        function() {
+            currentSlide++
+            if (currentSlide === slides.length) {
+               currentSlide = 0 
+            }
+            sliderContainer.style.transform = `translateX(${-960*currentSlide}px)` 
+        },
+    3000
+    )
+})
+
+for (let i = 0; i < slides.length; i++){
+    let dot = document.createElement('span')
+    dot.classList.add('dot')
+   // dots.setAttribute('data-slide', i)
+    paginationContainer.appendChild(dot)
+    dots.push(dot)
+
+    dot.addEventListener('click', function(){
+        currentSlide = i
+        sliderContainer.style.transform = `translateX(${-960*currentSlide}px)`
+        updatePagination()
+    })
+}
+
+function updatePagination() {
+    for(let j = 0; j < dots.length; j++) {
+        if (j === currentSlide) {
+            dots[j].classList.add('active')
+        } else {
+            dots[j].classList.remove('active')
+        }
+    }
+}
+
+updatePagination()
+
 /**** landing page ****/
 /* hero animation hover*/
 /////spoon
@@ -333,14 +431,3 @@ blockSpoonBtn.addEventListener('mouseleave', function(){
   spoonctaPlay.setDirection(-1);
   spoonctaPlay.play();
 });
-
-
-/**** chat gustus ****/
-/* chat gustus overview */
-/* calendar overview */
-/* shopping list scroll */
-
-
-/* profil scroll and delete */
-/* batch cooking scroll and pop up */
-/* recepies slider and pop up */

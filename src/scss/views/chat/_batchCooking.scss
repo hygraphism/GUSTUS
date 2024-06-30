@@ -1,0 +1,153 @@
+.batch__and__recipe {
+    margin-bottom: 70px;
+}
+
+.other__container__batchCooking {
+    position: relative;
+
+    &__header {
+        margin-bottom: $gap;
+
+        h5 {
+            text-align: center;
+            color: $rose-bonbon;
+        }
+
+        .open-overlay-batchCooking-icon {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+    }
+
+    &__recipe__overview {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        background-color: #fff;
+        
+
+
+        &__content {
+            height: 550px;
+            overflow: auto;
+            border-bottom: none;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+
+            &__header {
+                display: flex;
+
+                .batchcooking__header__left {
+                    border-right: 3px solid $jaune-curcuma;
+                    width: 30%;
+
+                    .date {
+                        color: $bleu-passeoire;
+                        text-align: center;
+                        font-family: $head-font;
+                        font-size: 5.2rem;
+                        font-weight: 400;
+                        line-height: 80px;
+                        border-bottom: 3px solid $jaune-curcuma;
+
+
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                    }
+
+                    .peopleNumber__time {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        border-bottom: 3px solid $jaune-curcuma;
+                        
+                        padding-top: 6px;
+                        padding-bottom: 6px;
+
+                        h5 {
+                            text-decoration: none;
+                            color: $bleu-myrtille;
+                        }
+
+                        .peopleNumber {
+                            display: flex;
+                            gap: 8px;
+                        }
+
+                        .time {
+                            display: flex;
+                            gap: 8px;
+                        }
+                    }
+
+                }
+            
+
+                .batchcooking__header__right {
+                    width: 70%;
+
+                    .batchCooking {
+                        &__title {
+                            border-bottom: 3px solid $jaune-curcuma;
+                            position: relative;
+
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+
+                            .recipe__title {
+                                color: $rouge-tomate;
+                                text-align: center;
+                                font-family: $head-font;
+                                font-size: 5.2rem;
+                                font-weight: 400;
+                                line-height: 80px;
+                            }
+
+                            .saving-icon {
+                                position: absolute;
+                                top: 10px;
+                                right: 10px;
+                                cursor: pointer;
+                            }
+                        }
+
+                        &__subtitle {
+                            padding-top: 6px;
+                            padding-bottom: 6px;
+                            border-bottom: 3px solid $jaune-curcuma;
+                            text-align: left;
+
+                            h5 {
+                                color: $bleu-myrtille;
+                                margin-left: 25px;
+                            }
+                        }
+                    }
+                }
+                
+            }
+
+
+        }
+
+        &__recipe {
+            overflow-y: scroll;
+            text-align: left;
+            display: flex;
+
+            &__ingredients {
+                width: 30%;
+                text-align: center;
+                padding: 6px;
+            }
+
+            &__recette {
+                width: 70%;
+                padding-left: 28px;
+                border-left: 3px solid $jaune-curcuma;
+            }
+        }
+    }
+}

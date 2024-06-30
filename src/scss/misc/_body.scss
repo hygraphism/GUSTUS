@@ -403,6 +403,37 @@ h6 {
 
 }
 
+.calendar-title {
+    font-family: $head-font;
+    font-weight: $calendar-title-weight;
+    font-size: $calendar-title-size-mobile;
+
+    @media screen and (min-width: 490px) {
+        font-size: $calendar-title-size-desktop;
+    }
+}
+
+.calendar-number {
+    font-family: $head-font;
+    font-weight: $calendar-number-weight;
+    font-size: $calendar-number-size-mobile;
+
+    @media screen and (min-width: 490px) {
+        font-size: $calendar-number-size-desktop;
+    }
+}
+
+.calendar-weekdays {
+    font-family: $body-font;
+    font-weight: $calendar-days-weight;
+    font-size: $calendar-days-size-mobile;
+
+    @media screen and (min-width: 490px) {
+        font-size: $calendar-days-size-desktop;
+    }
+}
+
+
 /* step flex */
 .elementVertical {
     display: flex;
@@ -450,7 +481,6 @@ h6 {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    gap: $gap-desktop;
 }
 
 .elementHorizontal {
@@ -494,7 +524,6 @@ h6 {
     display: flex;
     align-items: flex-start;
     align-content: flex-start;
-    gap: 40px 28px;
     flex-wrap: wrap;
 }
 
