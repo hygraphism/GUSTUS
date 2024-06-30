@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 /* batch cooking scroll and pop up */
 /* recepies slider and pop up */
-const sliderContainer = document.querySelector(".sliderContainer")
+/*const sliderContainer = document.querySelector(".sliderContainer")
 const slides = document.querySelectorAll('.slide')
 const prev = document.querySelector(".prev")
 const next = document.querySelector(".next")
@@ -103,7 +103,7 @@ function updatePagination() {
     }
 }
 
-updatePagination()
+updatePagination()*/
 
 /**** landing page ****/
 /* hero animation hover*/
