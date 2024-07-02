@@ -25,9 +25,15 @@
         min-height: 430px;
 
         svg {
-            width: 75%;
-            margin: 0 auto;
-            vertical-align: middle;
+            width: 75% !important;
+
+            @media screen and (min-width: 900px) {
+                width: 99% !important;
+            }
+        
+            @media screen and (min-width: 1800px) {
+                width: 65% !important;
+            }
         }
     }
 }

@@ -58,35 +58,24 @@ h2 {
 
 h3 {
     font-family: $head-font;
-    font-size: 7.2rem;
     line-height: 0px;
-    margin-right: 16px;
-
-    @media screen and (min-width: 900px) {
-        font-size: 10rem;
-        margin-right: 20px;
-    }
-    
-    @media screen and (min-width: 1280px) {
-        font-size: 14rem;
-        margin-right: 28px;
-    }
+    font-size: 10rem;
 }
 
 h4 {
     font-family: $body-font;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     font-weight: 700;
-    line-height: 24px;
+    line-height: 1.6;
 
     @media screen and (min-width: 900px) {
-        font-size: 2rem;
-        line-height: 30px;
+        font-size: 1.8rem;
+        line-height: 1.6;
     } 
 
     @media screen and (min-width: 1280px) {
-        font-size: 4rem;
-        line-height: 50px;
+        font-size: 2.4rem;
+        line-height: 1.6;
     }
 }
 
@@ -181,7 +170,7 @@ h6 {
     width: 100%;
 
     @media screen and (min-width: 960px) {
-        width: calc(50% - $gap);
+        width: calc(50% - 1.5%);
    
     }
 }
@@ -228,7 +217,7 @@ h6 {
     height: fit-content;
 
     @media screen and (min-width: 960px) {
-        height: calc((100% / 3) - $gap);
+        height: calc((100% / 3) - 1.5%);
     }
 }
 
@@ -236,12 +225,12 @@ h6 {
     height: fit-content;
 
     @media screen and (min-width: 960px) {
-        height: calc((100% / 3 * 2) - $gap);
+        height: calc((100% / 3 * 2) - 1.5%);
     }
 }
 
 .element-height-1 {
-    height: calc(100% - $gap);
+    height: calc(100% - 1.5%);
     
 }
 
@@ -276,15 +265,15 @@ h6 {
 }
 
 .padding_step_horizontal {
-    padding: 40px 28px;
+    padding: 10px;
 }
 
 .padding_step_vertical {
-    padding: 28px;
+    padding: 10px;
 }
 
 .padding__step__title {
-    padding: 48px;
+    padding: 48px 0;
 }
 
 .padding-footer-content {
@@ -484,13 +473,12 @@ h6 {
 
 .elementVertical-step {
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
 }
 
 .elementHorizontal {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     flex-direction: row;
     gap: $gap-mobile;
 
@@ -502,9 +490,21 @@ h6 {
 .elementHorizontal-toVertical {
     display: flex;
     flex-direction: column;
+    gap: $gap;
+    align-items: stretch;
+
+    @media screen and (min-width: 960px) {
+        flex-direction: row;
+        gap: $gap
+    }
+}
+
+.elementHorizontal-toVertical-justify {
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
     gap: $gap;
-    align-items: center;
+    align-items: stretch;
 
     @media screen and (min-width: 960px) {
         flex-direction: row;
@@ -517,7 +517,7 @@ h6 {
     flex-direction: column;
     justify-content: space-between;
     gap: $gap;
-    align-items: center;
+    align-items: stretch;
 
     @media screen and (min-width: 1280px) {
         flex-direction: row;

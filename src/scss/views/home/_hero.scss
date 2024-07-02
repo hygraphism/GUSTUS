@@ -8,7 +8,7 @@
     &__half {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        gap: 20px;
         align-items: center;
 
         &__cta__content {
@@ -54,7 +54,7 @@
 
         &__images__container {
             display: flex;
-            justify-content: space-between;
+            gap: 20px;
         }
     }
 
@@ -86,7 +86,7 @@
             gap: $gap;
 
             &__images__container {
-                gap: $gap;
+                gap: 20px;
             }
 
             &__cta__content {
