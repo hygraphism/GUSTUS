@@ -247,6 +247,12 @@ h3 {
 }
 @media screen and (min-width: 900px) {
   h3 {
+    font-size: 10rem;
+    margin-right: 20px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  h3 {
     font-size: 14rem;
     margin-right: 28px;
   }
@@ -950,6 +956,7 @@ footer .span-footer-credits {
   color: #FFFCED;
 }
 .description__container__step__3 .step3 {
+  margin: 0 auto;
   width: 93%;
   height: 93%;
 }
@@ -957,6 +964,7 @@ footer .span-footer-credits {
   color: #D90718;
 }
 .description__container__step__4 .step4 {
+  margin: 0 auto;
   width: 50%;
   height: 50%;
 }
@@ -964,8 +972,9 @@ footer .span-footer-credits {
   color: #FFFCED;
 }
 .description__container__step__5 .step5 {
-  width: 50%;
-  height: 50%;
+  margin: 0 auto;
+  width: 65%;
+  height: 65%;
 }
 .description__container__step__6 {
   color: #D90718;
@@ -975,12 +984,28 @@ footer .span-footer-credits {
   color: #FFFCED;
   margin-top: 134px;
 }
+.about__title__text__container {
+  height: -moz-fit-content;
+  height: fit-content;
+}
 .about__title__text__content {
   text-align: center;
-  padding: 8%;
+  padding: 5%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 28px;
+  max-width: 1250px;
+  margin: 0 auto;
 }
 .about .about__image__container {
-  text-align: center;
+  max-height: 480px;
+  min-height: 430px;
+}
+.about .about__image__container svg {
+  width: 75%;
+  margin: 0 auto;
+  vertical-align: middle;
 }
 
 .faqContainer {

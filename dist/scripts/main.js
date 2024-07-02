@@ -109,57 +109,26 @@ updatePagination()*/
 /* hero animation hover*/
 /////spoon
 let spoon__animation = document.querySelector('.hero__spoon__artifice__content');
-let blockSpoon = document.getElementById('spoonHero'); 
 
 let spoonPlay = lottie.loadAnimation({
     container: spoon__animation,
     renderer: 'svg',
     loop: true,
-    autoplay: false,
+    autoplay: true,
+    prerender: true,
     path: "../dist/lotti/spoon_artifice.json"
-});
-
-blockSpoon.addEventListener('mouseenter', function() {
-  spoonPlay.playSegments([0,121],true);
-});
-
-blockSpoon.addEventListener('mouseleave', function() {
-  spoonPlay.playSegments([120,121],true);
 });
 
 /////tupp
 let tupp__animation = document.querySelector('.hero__tupp__content');
-let blockTupp = document.getElementById('tuppHero'); 
 
 let tuppPlay = lottie.loadAnimation({
     container: tupp__animation,
     renderer: 'svg',
     loop: true,
-    autoplay: false,
+    autoplay: true,
+    prerender: true,
     path: "../dist/lotti/tupp.json"
-});
-
-/*
-blockTupp.addEventListener('mouseenter', function() {
-  tuppPlay.playSegments([0,74],true);
-});
-
-blockTupp.addEventListener('mouseleave', function(){
-  tuppPlay.playSegments([73,74],true);
-})*/
-
-tuppPlay.addEventListener('DOMLoaded', function() {
-
-  tuppPlay.playSegments([73,74],true);
-
-  blockTupp.addEventListener('mouseenter', function(){
-    tuppPlay.playSegments([0,74],true);
-  })
-
-  blockTupp.addEventListener('mouseleave', function(){
-    tuppPlay.playSegments([73,74],true);
-  })
-
 });
 
 /* categories animations */
@@ -317,17 +286,9 @@ let fouetPlay = lottie.loadAnimation({
     loop: true,
     autoplay: true,
     prerender: true,
-    path: "../dist/lotti/chargement_icon_creme.json"
+    path: "../dist/lotti/chargement_icon_creme_2.json"
 });
 
-/*
-blockFouet.addEventListener('mouseenter', function() {
-  fouetPlay.playSegments([0,74],true);
-});
-
-blockFouet.addEventListener('mouseleave', function(){
-  fouetPlay.playSegments([73,74],true);
-})*/
 
 
 
