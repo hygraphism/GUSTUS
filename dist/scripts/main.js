@@ -33,8 +33,6 @@ document.addEventListener('DOMContentLoaded', function() {
           batchCookingVignette.classList.toggle('show');
       });
   }
-
-
 });
 
 /* recepies slider and pop up */
