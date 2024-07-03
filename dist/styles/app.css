@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* All */
 /*Couleurs*/
 /*Typos*/
@@ -288,6 +289,10 @@ h6 {
 }
 
 /* Background Color element */
+.elementWhite {
+  background-color: #fff;
+}
+
 .elementGreen {
   background-color: #57751F;
 }
@@ -356,6 +361,29 @@ h6 {
 }
 @media screen and (min-width: 960px) {
   .element-1-2 {
+    width: 48.5%;
+  }
+}
+
+.element-1-2-chatGustus {
+  width: 100%;
+}
+@media screen and (min-width: 1500px) {
+  .element-1-2-chatGustus {
+    width: 48.5%;
+  }
+}
+
+.element-1-2-chatGustus-box {
+  width: 80%;
+}
+@media screen and (min-width: 960px) {
+  .element-1-2-chatGustus-box {
+    width: 95%;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .element-1-2-chatGustus-box {
     width: 48.5%;
   }
 }
@@ -642,6 +670,7 @@ h6 {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  align-items: stretch;
 }
 
 .elementVertical-chatleft {
@@ -707,6 +736,31 @@ h6 {
 }
 @media screen and (min-width: 960px) {
   .elementHorizontal-toVertical {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.elementHorizontal-toVertical-chatGustus-boxChat {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media screen and (min-width: 960px) {
+  .elementHorizontal-toVertical-chatGustus-boxChat {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.elementHorizontal-toVertical-chatGustus {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+@media screen and (min-width: 1500px) {
+  .elementHorizontal-toVertical-chatGustus {
     flex-direction: row;
     justify-content: space-between;
   }
@@ -1140,17 +1194,23 @@ footer .span-footer-credits {
   margin-bottom: 20px;
 }
 
+.chat__container__content__logo__texte img {
+  width: 30%;
+}
+@media screen and (min-width: 600px) {
+  .chat__container__content__logo__texte img {
+    max-width: auto;
+  }
+}
+
 .tooltip {
   color: #24376E;
   font-family: "Quicksand", sans-serif;
   font-weight: 600;
-  font-size: 24px;
-  line-height: 36px;
+  font-size: 16px;
+  line-height: auto;
   max-width: 28ch;
   text-align: left;
-}
-
-.tooltip {
   /* triangle dimension */
   --b: 15px; /* control the base */
   --h: 5px; /* control the height */
@@ -1163,6 +1223,12 @@ footer .span-footer-credits {
   background: var(--c);
   -o-border-image: conic-gradient(var(--c) 0 0) 0 0 999 999/0 0 calc(var(--h) + var(--b)) calc(var(--h) + var(--b))/0 0 var(--h) var(--h);
      border-image: conic-gradient(var(--c) 0 0) 0 0 999 999/0 0 calc(var(--h) + var(--b)) calc(var(--h) + var(--b))/0 0 var(--h) var(--h);
+}
+@media screen and (min-width: 600px) {
+  .tooltip {
+    font-size: 24px;
+    line-height: 36px;
+  }
 }
 
 .btn__enregistrez__chat {
@@ -1390,6 +1456,11 @@ footer .span-footer-credits {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
+@media screen and (min-width: 1890px) {
+  .other__container__batchCooking__recipe__overview__content {
+    height: 700px;
+  }
+}
 .other__container__batchCooking__recipe__overview__content__header {
   display: flex;
 }
@@ -1477,6 +1548,29 @@ footer .span-footer-credits {
   border-left: 3px solid #F29F05;
 }
 
+.batchCooking__vignette {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(41, 60, 115, 0.25);
+  z-index: 9999; /* Un z-index élevé pour s'assurer qu'il est au-dessus des autres éléments */
+  display: none; /* Initialement caché */
+}
+.batchCooking__vignette .other__container__batchCooking__recipe__overview__content {
+  width: 50%;
+  margin: auto;
+  height: 1200px;
+  margin-top: 50px;
+  border: 3px solid #9EA5D3;
+  border-radius: 12px;
+}
+
+.batchCooking__vignette.show {
+  display: block;
+}
+
 .other__container__recipe__header h5 {
   text-align: center;
   color: #9EA5D3;
@@ -1485,14 +1579,10 @@ footer .span-footer-credits {
   position: relative;
   overflow: hidden;
 }
-.other__container__recipe .slider img {
-  width: 165%;
-}
 .other__container__recipe .prev, .other__container__recipe .next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  margin: 10px;
   cursor: pointer;
   z-index: 1;
 }
@@ -1501,34 +1591,20 @@ footer .span-footer-credits {
 }
 .other__container__recipe .next {
   right: 10px;
-  transform: rotate(180DEG);
+  transform: rotate(180deg);
 }
 .other__container__recipe .sliderContainer {
   display: flex;
   transition: transform 0.5s ease;
 }
-.other__container__recipe .pagination {
-  width: 200px;
-  position: absolute;
-  top: 90%;
-  right: 37%;
+.other__container__recipe .slide {
   display: flex;
-  justify-content: space-between;
-  z-index: 2;
+  justify-content: center;
   align-items: center;
+  width: 100%;
+  flex-shrink: 0;
 }
-.other__container__recipe .dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 5px;
-  background-color: #989898;
-  border-radius: 50%;
-  display: inline-block;
-  cursor: pointer;
-}
-.other__container__recipe .dot.active {
-  height: 20px;
-  width: 20px;
-  background-color: #ffffff;
-  transition: all linear 0.4s;
+.other__container__recipe .slide img {
+  width: 45%;
+  margin: 2% 2%;
 }/*# sourceMappingURL=app.css.map */

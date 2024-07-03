@@ -29,10 +29,10 @@
                 </span>
             </button>
         </header>
-        <section class="chat__and__other elementHorizontal-toVertical element-height-1">
-            <div class="chat__container elementCremeRed-borderColor elementBorder elementBorderRadius-in element-1-2 element-height-1 padding-chat-box">
+        <section class="chat__and__other elementHorizontal-toVertical-chatGustus element-height-1">
+            <div class="chat__container elementCremeRed-borderColor elementBorder elementBorderRadius-in element-1-2-chatGustus-box element-height-1 padding-chat-box">
                 <div class="chat__container__content">
-                    <div class="chat__container__content__logo__texte elementHorizontal">
+                    <div class="chat__container__content__logo__texte elementHorizontal-toVertical-chatGustus-boxChat">
                         <img src="dist/images/gustus-chat.svg" alt="logo gustus chat">
                         <div class="bulle__chat__container elementVertical-chatleft">
                             <div class="tooltip">Votre organisation meal prep est livré !</div>
@@ -42,8 +42,8 @@
                     <button class="btn__darkBlue__full btn__enregistrez__chat">Enregistrer</button>
                 </div>
             </div>
-            <div class="other__container elementHorizontal-toVertical element-1-2 element-height-1">
-                <div class="other__container__left elementVertical element-1-2 element-height-1">
+            <div class="other__container elementHorizontal-toVertical-chatGustus element-1-2-chatGustus element-height-1">
+                <div class="other__container__left elementVertical element-1-2-chatGustus element-height-1">
                     <div class="other__container__left__calendar">
                         <div class="other__container__left__calendar__header">
                             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="25" viewBox="0 0 14 25" fill="none">
@@ -154,7 +154,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="other__container__right__shoppingList elementGreen-borderColor elementBorder elementBorderRadius-in element-1-2 element-height-1">
+                <div class="other__container__right__shoppingList elementGreen-borderColor elementBorder elementBorderRadius-in element-1-2-chatGustus element-height-1">
                     <div class="other__container__right__shoppingList__header">
                         <img src="dist/images/gustus_shoppingList_icon.svg" alt="icone shopping">
                         <h5>Liste de courses</h5>
@@ -232,8 +232,8 @@
                 </div>
             </div>
         </section>
-        <section class="batch__and__recipe elementHorizontal-toVertical">
-            <div class="other__container__batchCooking elementPink-borderColor elementBorder elementBorderRadius-in element-1-2">
+        <section class="batch__and__recipe elementHorizontal-toVertical-chatGustus">
+            <div class="other__container__batchCooking elementPink-borderColor elementBorder elementBorderRadius-in element-1-2-chatGustus">
                 <div class="other__container__batchCooking__recipe">   
                     <div class="other__container__batchCooking__header">
                         <h5>Batch Cooking</h5>
@@ -288,46 +288,84 @@
                         </div>
                     </div>
                 </div>
+                <div class="batchCooking__vignette">
+                    <div class="other__container__batchCooking__recipe__overview__content elementWhite elementLightblue-borderColor elementBorderRadius-in">
+                        <div class="other__container__batchCooking__recipe__overview__content__header">
+                            <div class="batchcooking__header__left">
+                                <div class="date">
+                                    <span>08/06/24</span>
+                                </div>
+                                <div class="peopleNumber__time">
+                                    <div class="peopleNumber">
+                                        <img src="dist/images/gustus_recipe_peopleNumber.svg" alt="chef gustus">
+                                        <h5>3</h5>
+                                    </div>
+                                    <div class="time">
+                                        <img src="dist/images/time-icon.svg" alt="time icon">
+                                        <h5>3h</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="batchcooking__header__right">
+                                <div class="batchCooking__title">
+                                    <span class="recipe__title">Meal-Prep</span>
+                                    <div class="saving-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="37" viewBox="0 0 35 37" fill="none">
+                                            <path d="M2 22.9999V31.4999C2 33.1567 3.34315 34.4999 5 34.4999H30C31.6569 34.4999 33 33.1567 33 31.4999V22.9999M28 13.5001L17.5 24.5M17.5 24.5L7.5 13.5001M17.5 24.5L17.5 2" stroke="#57751F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                            
+                                    </div>
+                                </div>
+                                <div class="batchCooking__subtitle">
+                                    <h5>Étapes de préparation :</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="other__container__batchCooking__recipe__overview__recipe">
+                            <!--<img src="dist/images/batchcooking_content.svg" alt="batch cooking">-->
+                            <div class="other__container__batchCooking__recipe__overview__recipe__ingredients">
+                                <img src="dist/images/batchcooking_content_ingredients.svg" alt="ingredients et ustensiles">
+                            </div>
+                            <div class="other__container__batchCooking__recipe__overview__recipe__recette">
+                                <img src="dist/images/batchcooking_content_recette.svg" alt="recette">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="other__container__recipe elementLightblue-borderColor elementBorder elementBorderRadius-in element-1-2">
+            <div class="other__container__recipe elementLightblue-borderColor elementBorder elementBorderRadius-in element-1-2-chatGustus">
                 <div class="other__container__recipe__header">
                     <h5>Recettes</h5>
                 </div>
                 <div class="slider">
                     <div class="navigation">
-                      <div class="prev">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.84508 11.8418C3.52412 11.5209 3.52412 11.0005 3.84508 10.6795L11.9813 2.54328C12.3023 2.22232 12.3023 1.70193 11.9813 1.38096C11.6603 1.06 11.14 1.06 10.819 1.38096L2.10161 10.0983C1.45968 10.7403 1.45968 11.7811 2.10161 12.423L10.819 21.1404C11.14 21.4613 11.6603 21.4613 11.9813 21.1404C12.3023 20.8194 12.3023 20.299 11.9813 19.978L3.84508 11.8418Z" fill="#9EA5D3"/>
-                        </svg>
-                      </div>
-                      <div class="next">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.84508 11.8418C3.52412 11.5209 3.52412 11.0005 3.84508 10.6795L11.9813 2.54328C12.3023 2.22232 12.3023 1.70193 11.9813 1.38096C11.6603 1.06 11.14 1.06 10.819 1.38096L2.10161 10.0983C1.45968 10.7403 1.45968 11.7811 2.10161 12.423L10.819 21.1404C11.14 21.4613 11.6603 21.4613 11.9813 21.1404C12.3023 20.8194 12.3023 20.299 11.9813 19.978L3.84508 11.8418Z" fill="#9EA5D3"/>
-                        </svg>
-                      </div>
+                        <div class="prev">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.84508 11.8418C3.52412 11.5209 3.52412 11.0005 3.84508 10.6795L11.9813 2.54328C12.3023 2.22232 12.3023 1.70193 11.9813 1.38096C11.6603 1.06 11.14 1.06 10.819 1.38096L2.10161 10.0983C1.45968 10.7403 1.45968 11.7811 2.10161 12.423L10.819 21.1404C11.14 21.4613 11.6603 21.4613 11.9813 21.1404C12.3023 20.8194 12.3023 20.299 11.9813 19.978L3.84508 11.8418Z" fill="#9EA5D3"/>
+                            </svg>
+                        </div>
+                        <div class="next">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.84508 11.8418C3.52412 11.5209 3.52412 11.0005 3.84508 10.6795L11.9813 2.54328C12.3023 2.22232 12.3023 1.70193 11.9813 1.38096C11.6603 1.06 11.14 1.06 10.819 1.38096L2.10161 10.0983C1.45968 10.7403 1.45968 11.7811 2.10161 12.423L10.819 21.1404C11.14 21.4613 11.6603 21.4613 11.9813 21.1404C12.3023 20.8194 12.3023 20.299 11.9813 19.978L3.84508 11.8418Z" fill="#9EA5D3"/>
+                            </svg>
+                        </div>
                     </div>
-                    <div class="pagination"></div>
                     <div class="sliderContainer">
-                      <div class="slide">
-                        <img src="dist/images/Recette_porridge_generate.svg" alt="Recette porridge"/>
-                      </div>
-                      <div class="slide">
-                        <img src="dist/images/Recette_smoothie_generate.svg" alt="Recette smoothie"/>
-                      </div>
-                      <div class="slide">
-                        <img src="dist/images/Recette_chili_generate.svg" alt="Recette chili"/>
-                      </div>
-                      <div class="slide">
-                        <img src="dist/images/Recette_curry_generate.svg" alt="Recette curry"/>
-                      </div>
+                        <div class="slide">
+                            <img src="dist/images/Recette_porridge_generate.svg" alt="Recette porridge"/>
+                            <img src="dist/images/Recette_smoothie_generate.svg" alt="Recette smoothie"/>
+                        </div>
+                        <div class="slide">
+                            <img src="dist/images/Recette_chili_generate.svg" alt="Recette chili"/>
+                            <img src="dist/images/Recette_curry_generate.svg" alt="Recette curry"/>
+                        </div>
                     </div>
-                  </div>
-            </div>
+                </div>
+            </div>            
         </section>
     </section>
     <footer class="footer elementDarkblue">
         <div class="footer__content padding-footer-content">
-            <div class="footer__content__logo elementHorizontal-toVertical-footer">
+            <div class="footer__content__logo elementHorizontal-toVertical-chatGustus-footer">
                 <a href="index.html"><img src="dist/images/logo-footer.svg" alt="logo gustus"></a>
                 <div class="footer__content__logo__link elementHorizontal-footer">
                     <div class="elementVertical-footer">

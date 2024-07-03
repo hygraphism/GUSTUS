@@ -31,6 +31,10 @@
 
         &__content {
             height: 550px;
+
+            @media screen and (min-width: 1890px) {
+                height: 700px;
+            }
             overflow: auto;
             border-bottom: none;
             border-bottom-left-radius: 0;
@@ -150,4 +154,36 @@
             }
         }
     }
+}
+
+.batchCooking__vignette {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(41, 60, 115, 0.25);
+    z-index: 9999; /* Un z-index élevé pour s'assurer qu'il est au-dessus des autres éléments */
+    display: none; /* Initialement caché */
+
+    .other__container__batchCooking__recipe__overview {
+
+
+
+        &__content {
+            width: 50%;
+            margin: auto;
+            height: 1200px;
+            margin-top: 50px;
+
+            border: 3px solid $bleu-passeoire;
+            border-radius: 12px;
+        }
+
+    }
+
+    }
+
+.batchCooking__vignette.show {
+    display: block;
 }

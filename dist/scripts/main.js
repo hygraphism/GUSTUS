@@ -23,87 +23,53 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-/* batch cooking scroll and pop up */
+/* batch pop up */
+document.addEventListener('DOMContentLoaded', function() {
+  const openOverlayIcon = document.querySelector('.open-overlay-batchCooking-icon');
+  const batchCookingVignette = document.querySelector('.batchCooking__vignette');
+
+  if (openOverlayIcon && batchCookingVignette) {
+      openOverlayIcon.addEventListener('click', function() {
+          batchCookingVignette.classList.toggle('show');
+      });
+
+      // Ajouter un gestionnaire de clic pour fermer la vignette en dehors de son contenu
+      document.addEventListener('click', function(event) {
+          // Vérifier si la vignette est ouverte
+          if (batchCookingVignette.classList.contains('show')) {
+              // Vérifier si l'élément cliqué n'est pas à l'intérieur de la vignette
+              if (!batchCookingVignette.contains(event.target)) {
+                  batchCookingVignette.classList.remove('show');
+              }
+          }
+      });
+  }
+});
+
 /* recepies slider and pop up */
-/*const sliderContainer = document.querySelector(".sliderContainer")
-const slides = document.querySelectorAll('.slide')
-const prev = document.querySelector(".prev")
-const next = document.querySelector(".next")
-const paginationContainer = document.querySelector(".pagination")
-let currentSlide = 0
-let dots = []
-let sliderInterval = setInterval (
-    function() {
-        currentSlide++
-        if (currentSlide === slides.length) {
-           currentSlide = 0 
-        }
-        sliderContainer.style.transform = `translateX(${-960*currentSlide}px)`
-        updatePagination()
-    },
-3000
-)
+const sliderContainer = document.querySelector(".sliderContainer");
+const slides = document.querySelectorAll('.slide');
+const prev = document.querySelector(".prev");
+const next = document.querySelector(".next");
+let currentSlide = 0;
 
 prev.addEventListener('click', function(){
-    currentSlide--
+    currentSlide--;
     if (currentSlide < 0) {
-        currentSlide = slides.length - 1
+        currentSlide = slides.length - 1;
     }
-    sliderContainer.style.transform = `translateX(${-960*currentSlide}px)`
-    updatePagination()
-})
+    sliderContainer.style.transform = `translateX(${-100 * currentSlide}%)`;
+});
 
 next.addEventListener('click', function(){
-    currentSlide++
+    currentSlide++;
     if (currentSlide === slides.length) {
-       currentSlide = 0 
+        currentSlide = 0;
     }
-    sliderContainer.style.transform = `translateX(${-960*currentSlide}px)`
-    updatePagination()
-})
+    sliderContainer.style.transform = `translateX(${-100 * currentSlide}%)`;
+});
 
-sliderContainer.addEventListener('mouseover', function(){
-    clearInterval(sliderInterval)
-})
 
-sliderContainer.addEventListener('mouseout', function(){
-    sliderInterval = setInterval (
-        function() {
-            currentSlide++
-            if (currentSlide === slides.length) {
-               currentSlide = 0 
-            }
-            sliderContainer.style.transform = `translateX(${-960*currentSlide}px)` 
-        },
-    3000
-    )
-})
-
-for (let i = 0; i < slides.length; i++){
-    let dot = document.createElement('span')
-    dot.classList.add('dot')
-   // dots.setAttribute('data-slide', i)
-    paginationContainer.appendChild(dot)
-    dots.push(dot)
-
-    dot.addEventListener('click', function(){
-        currentSlide = i
-        sliderContainer.style.transform = `translateX(${-960*currentSlide}px)`
-        updatePagination()
-    })
-}
-
-function updatePagination() {
-    for(let j = 0; j < dots.length; j++) {
-        if (j === currentSlide) {
-            dots[j].classList.add('active')
-        } else {
-            dots[j].classList.remove('active')
-        }
-    }
-}
-
-updatePagination()*/
 
 /**** landing page ****/
 /* hero animation hover*/

@@ -1,7 +1,6 @@
 .other__container__recipe {
 
     &__header {
-
         h5 {
             text-align: center;
             color: $bleu-passeoire;
@@ -11,61 +10,40 @@
     .slider {
         position: relative;
         overflow: hidden;
-
-        img {
-            width: 165%;
-        }
     }
       
     .prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    margin: 10px;
-    cursor: pointer;
-    z-index: 1; 
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        z-index: 1; 
     }
       
     .prev {
-    left: 10px;
+        left: 10px;
     }
       
     .next {
-    right: 10px;
-    transform: rotate(180DEG);
+        right: 10px;
+        transform: rotate(180deg);
     }
       
     .sliderContainer {
-    display: flex;
-    transition: transform 0.5s ease;
+        display: flex;
+        transition: transform 0.5s ease;
     }
-      
-    .pagination {
-    width: 200px;
-    position: absolute;
-    top: 90%;
-    right: 37%;
-    display: flex;
-    justify-content: space-between;
-    z-index: 2;
-    align-items: center;
+
+    .slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        flex-shrink: 0;
     }
-      
-    .dot {
-    height: 15px;
-    width: 15px;
-    margin: 0 5px;
-    background-color: #989898;
-    border-radius: 50%;
-    display: inline-block;
-    cursor: pointer;
+
+    .slide img {
+        width: 45%;
+        margin: 2% 2%;
     }
-      
-    .dot.active {
-    height: 20px;
-    width: 20px;
-    background-color: #ffffff;
-    transition: all linear 0.4s;
-    }
-    
 }
