@@ -25,21 +25,43 @@
         }
 
         &__step__container {
-            max-height: 900px;
+            @media screen and (min-width: 960px) {
+                max-height: 900px;
+            }
         }
 
         &__step__1 {
             color: $creme-chantilly;
+            width: 100%;
+
+            @media screen and (min-width: 960px) {
+                width: auto;
+            }
 
             .step1 {
-                align-self: center;
+                margin: 0 auto;
+                text-align: center;
                 width: 50%;
-                height: 50%;
+                
+                @media screen and (min-width: 960px) {
+                    height: 50%;
+                }
             }
         }
 
         &__step__2 {
             color: $rouge-tomate;
+
+            .step2 {
+                margin: 0 auto;
+                width: 50%;
+                text-align: center;
+                    
+                @media screen and (min-width: 960px) {
+                    width: auto;
+                }
+            }
+            
         }
 
         &__step__3 {
@@ -47,8 +69,12 @@
             
             .step3 {
                 margin: 0 auto;
-                width: 65%;
-                height: 65%;
+                text-align: center;
+                
+                @media screen and (min-width: 960px) {
+                    width: 65%;
+                    height: 65%;
+                }
             }
         }
 
@@ -57,8 +83,12 @@
             
             .step4 {
                 margin: 0 auto;
-                width: 50%;
-                height: 50%;
+                text-align: center;
+                
+                @media screen and (min-width: 960px) {
+                    width: 50%;
+                    height: 50%;
+                }
             }
         }
 
@@ -67,14 +97,33 @@
             
             .step5 {
                 margin: 0 auto;
-                width: 50%;
-                height: 50%;
+                text-align: center;
+
+                @media screen and (min-width: 960px) {
+                    width: 50%;
+                    height: 50%;
+                }
+
             }
         }
 
         &__step__6 {
             color: $rouge-tomate;
-            
+            width: 100%;
+
+            @media screen and (min-width: 960px) {
+                width: auto;
+            }
+
+            .step6 {
+                margin: 0 auto;
+                width: 30%;
+                text-align: center;
+                    
+                @media screen and (min-width: 960px) {
+                    width: auto;
+                }
+            }
 
         }
     }

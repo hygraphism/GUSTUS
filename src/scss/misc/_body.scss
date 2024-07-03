@@ -184,7 +184,7 @@ h6 {
 }
 
 .element-2-3 {
-    width: fit-content;
+    width: 100%;
 
     @media screen and (min-width: 960px) {
         width: calc((100% / 3 * 2) - $gap);
@@ -192,7 +192,7 @@ h6 {
 }
 
 .element-1-3 {
-    width: fit-content;
+    width: 100%;
 
     @media screen and (min-width: 960px) {
         width: calc((100% / 3) - $gap);
@@ -200,7 +200,9 @@ h6 {
 }
 
 .width_step_title {
-    width: 80%;
+    @media screen and (min-width: 960px) {
+        width: 80%;
+    }
 }
 
 .width-h2-p-hero {
@@ -491,11 +493,11 @@ h6 {
     display: flex;
     flex-direction: column;
     gap: $gap;
-    align-items: stretch;
+    align-items: center;
 
     @media screen and (min-width: 960px) {
         flex-direction: row;
-        gap: $gap
+        justify-content: space-between;
     }
 }
 
