@@ -32,18 +32,9 @@ document.addEventListener('DOMContentLoaded', function() {
       openOverlayIcon.addEventListener('click', function() {
           batchCookingVignette.classList.toggle('show');
       });
-
-      // Ajouter un gestionnaire de clic pour fermer la vignette en dehors de son contenu
-      document.addEventListener('click', function(event) {
-          // Vérifier si la vignette est ouverte
-          if (batchCookingVignette.classList.contains('show')) {
-              // Vérifier si l'élément cliqué n'est pas à l'intérieur de la vignette
-              if (!batchCookingVignette.contains(event.target)) {
-                  batchCookingVignette.classList.remove('show');
-              }
-          }
-      });
   }
+
+
 });
 
 /* recepies slider and pop up */
